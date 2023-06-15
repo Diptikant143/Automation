@@ -9,7 +9,7 @@ public class SodMatrixPage extends BaseClass{
 	
 	
 	@Test
-	public void Tc_Id_() throws Throwable {
+	public void SodMatrixPage() throws Throwable {
 		SodMatrix matrix=new SodMatrix(driver);
 		matrix.getUserNameTextField().sendKeys(USERNAME);
 		matrix.getLohinbtn().click();

@@ -21,8 +21,10 @@ import pomPages.RegisterNewClient;
 @Listeners(ListnerImplementationClass.class)
 public class Registerclient extends BaseClass{
 	
+	
+	
 	@Test
-	public void TC_002Test_() throws Throwable {
+	public void REGISTERNEWCLIENT()throws Throwable {
 		
 		ListnerImplementationClass.test.log(Status.INFO, "REGISTERNEWCLIENT");
 		
@@ -90,7 +92,7 @@ public class Registerclient extends BaseClass{
 		client.getClick().click();
 		
 		 Thread.sleep(5000);
-	    wLib.uploadFileWithRobot("\"C:\\Users\\dipti\\OneDrive\\Pictures\\download.png\"");
+	    wLib.uploadFileWithRobot(System. getProperty("user.dir")+"\\Data\\download.png");
 	    
 	    Thread.sleep(5000);
 	    client.getClickonnext().click();
@@ -119,13 +121,14 @@ public class Registerclient extends BaseClass{
 		
 //		FOR MODULE TWO
 		
+		Thread.sleep(3000);
 		client.getModulelicenses2().click();
 		client.getiMatrix().click();
 		
 		client.getClickondate2().click();
 		Thread.sleep(1000);
 		client.clickoncurrentdate2(driver);
-		client.getEnddate2().sendKeys("5/8/2024");
+		client.getEnddate2().sendKeys("8/14/2024");
 		client.getAddagain().click();
 		
 		

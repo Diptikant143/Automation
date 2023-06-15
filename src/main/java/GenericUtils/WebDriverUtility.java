@@ -190,7 +190,8 @@ public  class WebDriverUtility {
         System.out.println(scrFile.toString()+"--------------------------------------------------------");
 File dest = new File(filePath);
         try {
-            FileUtils.copyFile(scrFile, dest);
+            //FileUtils.copyFile(scrFile, dest);
+        	
         }catch(Exception e){
             e.printStackTrace();
         }

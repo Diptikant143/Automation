@@ -22,72 +22,87 @@ public class CreateNewuser {
 	
 	
 	@FindBy(xpath="(//span[text()='Setup and Administration'])[1]")
-	private WebElement setup2;
+
+	private WebElement Setup;
+
 	
 
 	@FindBy(xpath="//span[text()='Create New User']")
-	private WebElement createnewuser;
-	
-	
-	@FindBy(xpath="(//input[@type='text'])[2]")
-	private WebElement firstname;
-	
-	
-	@FindBy(xpath="(//input[@type='text'])[3]")
-	private WebElement lastname;
-	
-	
-	@FindBy(xpath="(//input[@type='text'])[4]")
-	private WebElement emailid;
-	
-	
-	@FindBy(xpath="//input[@type='number']")
-	private WebElement contactnumber;
-	
+
+	private WebElement NewUser;
+
 	
 
-	@FindBy(xpath="(//input[@type='text'])[5]")
-	private WebElement username;
+	@FindBy(xpath="//input[@formcontrolname=\'firstName\']")
+
+	private WebElement firstName;
+
 	
 
-	@FindBy(xpath="//input[@type='password']")
-	private WebElement password;
+	@FindBy(xpath="//input[@formcontrolname=\'lastName\']")
+
+	private WebElement lastName;
+
 	
+
+	@FindBy(xpath="//input[@formcontrolname=\'emailID\']")
+
+	private WebElement email;
+
+	
+
+	@FindBy(xpath="//input[@formcontrolname=\'contactNumber\']")
+
+	private WebElement Num;
+
+	
+
+	@FindBy(xpath="//input[@formcontrolname=\'username\']")
+
+	private WebElement UserName;
+
+	
+
+	@FindBy(xpath="//input[@formcontrolname='password']")
+
+	private WebElement PassWord;
+
+	
+
 	@FindBy(xpath="//span[text()='Choose Customer']")
-	private WebElement forcustomer;
-	
-	
-	@FindBy(xpath="//span[text()=' Client_Demo']")
-	private WebElement testingclient;
-	
-	
-	@FindBy(xpath="//div[@class='mat-select-value ng-tns-c189-14']")
-	private WebElement permissionpolicy;
-	
-	
-	@FindBy(xpath="//span[text()=' Client_Demo:TESTAUTOMATION']")
-	private WebElement permissionpolicyclient;
-	
-	
-	@FindBy(xpath="//input[@formcontrolname='endDate']")
-	private WebElement 	ENDDATE;
-	
-	@FindBy(xpath="//span[text()='Verify Email']")
-	private WebElement 	verifymail;
-	
-	@FindBy(xpath="(//span[text()='Create New User'])[2]")
-	private WebElement 	CREATENEWUSER;
 
-	@FindBy(xpath="//button[text()='OK']")
-	private WebElement 	CREATENEWUSERALERTOK;
+	private WebElement Clint;
+
 	
+
+	@FindBy(xpath="//span[text()=' iRM Super Admin']")
+
+	private WebElement chooseclint;
+
 	
-	@FindBy(xpath="//div[@role='button']")
-	private WebElement iRMBUTTON;
+
+	@FindBy(xpath="//span[text()='Permission Policy']")
+
+	private WebElement Permision;
+
 	
+
+	@FindBy(xpath="//span[text()=' iRM Super Admin:root policy']")
+
+	private WebElement choosePermision;
+
 	
-	@FindBy(xpath="//span[text()=' Log Out ']")
-	private WebElement Logoutbtn;
+
+	@FindBy(xpath="//input[@formcontrolname=\'endDate\']")
+
+	private WebElement enddate;
+
+	
+
+	@FindBy(xpath="//mat-checkbox[@id=\'mat-checkbox-1\']")
+
+	private WebElement checkbox;
+
 	
 	
 	public CreateNewuser(WebDriver driver) {
@@ -95,94 +110,115 @@ public class CreateNewuser {
 	
 	}
 
+
+
 	public WebElement getUserNameTextField() {
 		return userNameTextField;
 	}
+
+
 
 	public WebElement getLohinbtn() {
 		return lohinbtn;
 	}
 
+
+
 	public WebElement getPasswordtextfield() {
 		return passwordtextfield;
 	}
+
+
 
 	public WebElement getLoginbtn2() {
 		return loginbtn2;
 	}
 
-	public WebElement getSetup2() {
-		return setup2;
+
+
+	public WebElement getSetup() {
+		return Setup;
 	}
 
-	public WebElement getCreatenewuser() {
-		return createnewuser;
+
+
+	public WebElement getNewUser() {
+		return NewUser;
 	}
 
-	public WebElement getFirstname() {
-		return firstname;
+
+
+	public WebElement getFirstName() {
+		return firstName;
 	}
 
-	public WebElement getLastname() {
-		return lastname;
+
+
+	public WebElement getLastName() {
+		return lastName;
 	}
 
-	public WebElement getEmailid() {
-		return emailid;
+
+
+	public WebElement getEmail() {
+		return email;
 	}
 
-	public WebElement getContactnumber() {
-		return contactnumber;
+
+
+	public WebElement getNum() {
+		return Num;
 	}
 
-	public WebElement getUsername() {
-		return username;
+
+
+	public WebElement getUserName() {
+		return UserName;
 	}
 
-	public WebElement getPassword() {
-		return password;
+
+
+	public WebElement getPassWord() {
+		return PassWord;
 	}
 
-	public WebElement getForcustomer() {
-		return forcustomer;
+
+
+	public WebElement getClint() {
+		return Clint;
 	}
 
-	public WebElement getTestingclient() {
-		return testingclient;
+
+
+	public WebElement getChooseclint() {
+		return chooseclint;
 	}
 
-	public WebElement getPermissionpolicy() {
-		return permissionpolicy;
+
+
+	public WebElement getPermision() {
+		return Permision;
 	}
 
-	public WebElement getPermissionpolicyclient() {
-		return permissionpolicyclient;
+
+
+	public WebElement getChoosePermision() {
+		return choosePermision;
 	}
 
-	public WebElement getENDDATE() {
-		return ENDDATE;
+
+
+	public WebElement getEnddate() {
+		return enddate;
 	}
 
-	public WebElement getVerifymail() {
-		return verifymail;
+
+
+	public WebElement getCheckbox() {
+		return checkbox;
 	}
 
-	public WebElement getCREATENEWUSER() {
-		return CREATENEWUSER;
-	}
-
-	public WebElement getCREATENEWUSERALERTOK() {
-		return CREATENEWUSERALERTOK;
-	}
-
-	public WebElement getiRMBUTTON() {
-		return iRMBUTTON;
-	}
-
-	public WebElement getLogoutbtn() {
-		return Logoutbtn;
-	}
-
+	
 	
 	
 	

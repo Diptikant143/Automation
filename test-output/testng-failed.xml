@@ -6,11 +6,11 @@
       <class name="demo.Registerclient">
         <methods>
           <include name="launchBrowser"/>
-          <include name="TC_002Test_"/>
           <include name="bSuite"/>
           <include name="logoutApp"/>
           <include name="closeBrowser"/>
           <include name="closeDB"/>
+          <include name="REGISTERNEWCLIENT"/>
           <include name="loginToApp"/>
         </methods>
       </class> <!-- demo.Registerclient -->

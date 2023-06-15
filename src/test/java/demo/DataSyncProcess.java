@@ -1,21 +1,28 @@
 package demo;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import GenericUtils.BaseClass;
-import pomPages.DataSync;
+import com.aventstack.extentreports.Status;
 
+import GenericUtils.BaseClass;
+import GenericUtils.ListnerImplementationClass;
+import pomPages.DataSync;
+@Listeners(ListnerImplementationClass.class)
 public class DataSyncProcess extends BaseClass {
 	
 	@Test
-	public void TC_ID_005_() throws Throwable {
+	public void DataSyncProcess() throws Throwable {
 		
+		ListnerImplementationClass.test.log(Status.INFO, "DATA SYNC PROCESS");
 		
 		DataSync data=new DataSync(driver);
 		data.getUserNameTextField().sendKeys(USERNAME);
 		data.getLohinbtn().click();
 		data.getPasswordtextfield().sendKeys(PASSWORD);
 		data.getLoginbtn2().click();
+		ListnerImplementationClass.test.log(Status.INFO, "LOGIN");
+		
 		data.getLogo().click();
 		data.getChangeclient().click();
 		data.getMicroDemo().click();
@@ -53,6 +60,7 @@ public class DataSyncProcess extends BaseClass {
 		data.getJobs().click();
 		Thread.sleep(2000);
 		//data.getRefresh().click();
+		ListnerImplementationClass.test.log(Status.INFO, "DATA SYNC PROCESS COMPLETED");
 	}
 
 }

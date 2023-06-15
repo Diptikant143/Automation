@@ -3,6 +3,7 @@ package GenericUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.AfterClass;
@@ -12,6 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import pomPages.LoginPage;
 
 
@@ -38,10 +40,21 @@ public void bSuite() {
 @BeforeClass
 public void launchBrowser() throws Throwable {
 	//read data from property file
-	String BROWSER = fLib.getPropertyKeyValue("browser");
+	String BROWSER = fLib.getPropertyKeyValue("Browser");
 	String URL = fLib.getPropertyKeyValue("url");
 	
-	driver=new ChromeDriver();
+	//driver=new ChromeDriver();
+	if (BROWSER.equalsIgnoreCase("edge")) {
+		WebDriverManager.edgedriver().setup();
+        driver = new EdgeDriver();
+    } else if (BROWSER.equalsIgnoreCase("chrome")) {
+    	WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        
+    } else {
+        System.out.println("Invalid browser specified.");
+        return;
+    }
 	System.out.println("===========Browser Launch Sucessfully===========");
 	wLib.maximiseWindow(driver);
 	wLib.waitUntilPageLoad(driver);
@@ -89,7 +102,7 @@ public void logoutApp() {
 }
 @AfterClass
 public void closeBrowser() {
-	//driver.close();
+	driver.close();
 	System.out.println("=====Browser close sucessfull============");
 }
 @AfterSuite

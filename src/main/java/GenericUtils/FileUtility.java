@@ -1,5 +1,6 @@
 package GenericUtils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
 import java.util.Properties;
@@ -27,4 +28,8 @@ public class FileUtility {
 		return value;
 	}
 	**/
-}
+
+	
+		
+	}
+
