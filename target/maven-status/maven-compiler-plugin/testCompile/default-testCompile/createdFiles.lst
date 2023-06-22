@@ -1,5 +1,10 @@
-demo\Developer.class
-snippet\Snippet.class
-demo\RegisterNC.class
-demo\DataSync.class
-demo\Ebay.class
+TestPages\SoDMatrix.class
+TestPages\DataSync.class
+TestPages\RegisterNC.class
+TestPages\Permission.class
+TestPages\excel.class
+TestPages\SoDDashboard.class
+TestPages\iremadiation.class
+TestPages\ITGC.class
+TestPages\CreateNewUser.class
+TestPages\LoginPage.class

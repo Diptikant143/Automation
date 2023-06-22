@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-20T09:44:24 IST" name="Default suite" finished-at="2023-04-20T09:44:31 IST" duration-ms="7904">
+  <suite started-at="2023-05-29T12:16:09 IST" name="Default suite" finished-at="2023-05-29T12:16:19 IST" duration-ms="9746">
     <groups>
     </groups>
-    <test started-at="2023-04-20T09:44:24 IST" name="Default test" finished-at="2023-04-20T09:44:31 IST" duration-ms="7904">
-      <class name="demo.Developer">
-        <test-method is-config="true" signature="bSuite()[pri:0, instance:demo.Developer@223aa2f7]" started-at="2023-04-20T09:44:24 IST" name="bSuite" finished-at="2023-04-20T09:44:24 IST" duration-ms="11" status="PASS">
+    <test started-at="2023-05-29T12:16:09 IST" name="Default test" finished-at="2023-05-29T12:16:19 IST" duration-ms="9746">
+      <class name="TestPages.excel">
+        <test-method is-config="true" signature="bSuite()[pri:0, instance:TestPages.excel@6fd83fc1]" started-at="2023-05-29T12:16:09 IST" name="bSuite" finished-at="2023-05-29T12:16:09 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bSuite -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:demo.Developer@223aa2f7]" started-at="2023-04-20T09:44:24 IST" name="launchBrowser" finished-at="2023-04-20T09:44:25 IST" duration-ms="1832" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestPages.excel@6fd83fc1]" started-at="2023-05-29T12:16:09 IST" name="launchBrowser" finished-at="2023-05-29T12:16:15 IST" duration-ms="5747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:demo.Developer@223aa2f7]" started-at="2023-04-20T09:44:25 IST" name="loginToApp" finished-at="2023-04-20T09:44:30 IST" duration-ms="4916" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:TestPages.excel@6fd83fc1]" started-at="2023-05-29T12:16:15 IST" name="loginToApp" finished-at="2023-05-29T12:16:17 IST" duration-ms="2218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="Developerpage()[pri:0, instance:demo.Developer@223aa2f7]" started-at="2023-04-20T09:44:30 IST" name="Developerpage" finished-at="2023-04-20T09:44:31 IST" duration-ms="1130" status="PASS">
+        <test-method signature="test()[pri:0, instance:TestPages.excel@6fd83fc1]" started-at="2023-05-29T12:16:17 IST" name="test" finished-at="2023-05-29T12:16:19 IST" duration-ms="1545" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Developerpage -->
-        <test-method is-config="true" signature="logoutApp()[pri:0, instance:demo.Developer@223aa2f7]" started-at="2023-04-20T09:44:31 IST" name="logoutApp" finished-at="2023-04-20T09:44:31 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="logoutApp()[pri:0, instance:TestPages.excel@6fd83fc1]" started-at="2023-05-29T12:16:19 IST" name="logoutApp" finished-at="2023-05-29T12:16:19 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutApp -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:demo.Developer@223aa2f7]" started-at="2023-04-20T09:44:31 IST" name="closeBrowser" finished-at="2023-04-20T09:44:31 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestPages.excel@6fd83fc1]" started-at="2023-05-29T12:16:19 IST" name="closeBrowser" finished-at="2023-05-29T12:16:19 IST" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="closeDB()[pri:0, instance:demo.Developer@223aa2f7]" started-at="2023-04-20T09:44:32 IST" name="closeDB" finished-at="2023-04-20T09:44:32 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeDB()[pri:0, instance:TestPages.excel@6fd83fc1]" started-at="2023-05-29T12:16:19 IST" name="closeDB" finished-at="2023-05-29T12:16:19 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDB -->
-      </class> <!-- demo.Developer -->
+      </class> <!-- TestPages.excel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

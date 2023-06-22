@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="TestPages.RegisterNC">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="RegisterNCTest"/>
+          <include name="bSuite"/>
+          <include name="logoutApp"/>
+          <include name="closeBrowser"/>
+          <include name="closeDB"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- TestPages.RegisterNC -->
+      <class name="TestPages.Permission">
+        <methods>
+          <include name="PermissionManagement"/>
+          <include name="launchBrowser"/>
+          <include name="bSuite"/>
+          <include name="logoutApp"/>
+          <include name="closeBrowser"/>
+          <include name="closeDB"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- TestPages.Permission -->
+      <class name="TestPages.CreateNewUser">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="bSuite"/>
+          <include name="logoutApp"/>
+          <include name="closeBrowser"/>
+          <include name="closeDB"/>
+          <include name="NewUserTest"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- TestPages.CreateNewUser -->
+      <class name="TestPages.SoDDashboard">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="bSuite"/>
+          <include name="closeBrowser"/>
+          <include name="logoutApp"/>
+          <include name="closeDB"/>
+          <include name="SoDDashboardTest"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- TestPages.SoDDashboard -->
+      <class name="TestPages.LoginPage">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="bSuite"/>
+          <include name="logoutApp"/>
+          <include name="closeBrowser"/>
+          <include name="closeDB"/>
+          <include name="LoginTest"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- TestPages.LoginPage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

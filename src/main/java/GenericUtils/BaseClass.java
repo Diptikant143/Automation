@@ -12,7 +12,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-import pomPages.LoginPage;
+import PomPages.LoginPagePOM;
+
+
 
 
 
@@ -24,18 +26,21 @@ public ExcelUtility eLib = new ExcelUtility();
 public JavaUtility jLib = new JavaUtility();
 public WebDriver driver;
 public static WebDriver sdriver=null;
+public String USERNAME;
+public String PASSWORD;
 
 
 
 
 
-@BeforeSuite(groups = {"smoketest"})
+
+@BeforeSuite
 public void bSuite() {
 
 }
 
 
-@BeforeClass(groups = {"smoketest"})
+@BeforeClass
 public void launchBrowser() throws Throwable {
 	//read data from property file
 	String BROWSER = fLib.getPropertyKeyValue("browser");
@@ -57,50 +62,39 @@ public void launchBrowser() throws Throwable {
 	driver.get(URL);
 	sdriver=driver;
 }
-@BeforeMethod(groups = {"smoketest"})
+@BeforeMethod
 public void loginToApp() throws Throwable {
 //read data from property file
-	String USERNAME = fLib.getPropertyKeyValue("username");
-	String PASSWORD = fLib.getPropertyKeyValue("password");
-	// login to app
-	//Login l= new Login(driver);
-	//l.loginToApp(driver);
-	driver.findElement(By.xpath("//button[@class='secondary-button small-link']")).click();
-	driver.findElement(By.xpath("//a[@id='proceed-link']")).click();
-	LoginPage loginPage=new LoginPage(driver);
+	 USERNAME = fLib.getPropertyKeyValue("username");
+	PASSWORD = fLib.getPropertyKeyValue("password");
 	
-	loginPage.getUserNameTextField().sendKeys(USERNAME);
+	LoginPagePOM loginPage=new LoginPagePOM(driver);
 	
-	loginPage.getLoginbtn().click();
+	loginPage.getUsername().sendKeys(USERNAME);
+	
+	loginPage.getLogin1().click();
 	
 	Thread.sleep(1000);
-	loginPage.getPropasswordTextField().sendKeys(PASSWORD);
-	
-	driver.findElement(By.xpath("//span[@class='mat-button-wrapper']")).click();
-	
-	
-	driver.findElement(By.xpath("//span[@class='mat-select-placeholder mat-select-min-line ng-tns-c189-7 ng-star-inserted']")).click();
+	loginPage.getPassword().sendKeys(PASSWORD);
+	loginPage.getLogin1().click();
 	
 	
-	driver.findElement(By.xpath("(//span[@class='mat-option-text'])[2]")).click();
 	
-	
-	driver.findElement(By.xpath("//span[text()='LOGIN']")).click();
-	System.out.println("=============login sucessfull===========");
+		System.out.println("=============login sucessfull===========");
 }
-@AfterMethod(groups = {"smoketest"})
+@AfterMethod
 public void logoutApp() {
 	//sign out of home page
 	//Home h= new Home(driver);
 	///h.signOut(driver);
 	System.out.println("==========sign out sucessfull==========");
 }
-@AfterClass(groups = {"smoketest"})
+@AfterClass
 public void closeBrowser() {
-	//driver.close();
+	driver.close();
 	System.out.println("=====Browser close sucessfull============");
 }
-@AfterSuite(groups = {"smoketest"})
+@AfterSuite
 public void closeDB() {
 	//dLib.closeDB();
 	System.out.println("=============DB connection closed sucessfully======");

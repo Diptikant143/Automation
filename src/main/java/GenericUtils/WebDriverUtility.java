@@ -3,10 +3,12 @@ package GenericUtils;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.time.LocalDateTime;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -194,6 +196,53 @@ public  class WebDriverUtility {
 		
 		
 	}
+	public String takeScreenshot1(WebDriver driver,String screenshotName) throws Throwable {
+
+		String screenshotPath = "./screenshot/"+screenshotName+JavaUtility.getCurrentDate()+".PNG";
+
+		TakesScreenshot ts=(TakesScreenshot)driver;
+
+		File src = ts.getScreenshotAs(OutputType.FILE);
+
+		File dest = new File(screenshotPath);
+
+		Files.copy(src, dest);
+
+		return screenshotPath;
+
+		}
+
+		public String TakesScreenShots(WebDriver driver,String screenshotName)
+
+		{
+
+		String localDateTime= LocalDateTime.now().toString().replace(":","-");
+
+		String filePath = System.getProperty("user.dir")+"/errorshots/"+screenshotName+localDateTime+".png";
+
+		TakesScreenshot ts = (TakesScreenshot)driver;
+
+		File scrFile = ts.getScreenshotAs(OutputType.FILE);
+
+		System.out.println(scrFile.toString()+"--------------------------------------------------------");
+
+		File dest = new File(filePath);
+
+		try {
+
+		FileUtils.copyFile(scrFile, dest);
+
+		}catch(Exception e){
+
+		e.printStackTrace();
+
+		}
+
+		//System.out.println(dest.getAbsolutePath());
+
+		return dest.getAbsolutePath();
+
+		}
 	
 	/**
 	 * This mehod is used for maximize the Window

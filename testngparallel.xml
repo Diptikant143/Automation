@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="classes" name="Suite">
+  <test thread-count="3" parallel="classes" name="Test">
+    <classes>
+      <class name="TestPages.iremadiation"/>
+      <class name="TestPages.SoDMatrix"/>
+      <class name="TestPages.DataSync"/>
+      <class name="TestPages.LoginPage"/>
+      <class name="TestPages.Permission"/>
+      <class name="TestPages.SoDDashboard"/>
+      <class name="TestPages.RegisterNC"/>
+      <class name="TestPages.ITGC"/>
+      <class name="TestPages.CreateNewUser"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
