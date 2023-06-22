@@ -46,6 +46,22 @@ public class CreateNewUser extends BaseClass {
 	 	
 	 	CNU.getEnddate().sendKeys("4/24/2024");
 	 	CNU.getCheckbox().click();
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
 
      }
 }

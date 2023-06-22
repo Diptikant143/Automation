@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods, 1 failed,  4 skipped,  4 passed</span>
+                    <span class="method-stats">9 methods, 2 failed,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -105,36 +105,12 @@
                         <a href="#" panel-name="suite-Suite" title="TestPages.LoginPage" class="method navigator-link" hash-for-method="LoginTest">LoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestPages.CreateNewUser" class="method navigator-link" hash-for-method="NewUserTest">NewUserTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestPages.Permission" class="method navigator-link" hash-for-method="PermissionManagement">PermissionManagement</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestPages.RegisterNC" class="method navigator-link" hash-for-method="RegisterNCTest">RegisterNCTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestPages.SoDDashboard" class="method navigator-link" hash-for-method="SoDDashboardTest">SoDDashboardTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -155,7 +131,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestPages.CreateNewUser" class="method navigator-link" hash-for-method="NewUserTest">NewUserTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestPages.Permission" class="method navigator-link" hash-for-method="PermissionManagement">PermissionManagement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestPages.iremadiation" class="method navigator-link" hash-for-method="SoDDashboardTest">SoDDashboardTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestPages.SoDDashboard" class="method navigator-link" hash-for-method="SoDDashboardTest">SoDDashboardTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -178,6 +169,47 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">TestPages.RegisterNC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterNCTest">
+                  </a> <!-- RegisterNCTest -->
+                  <span class="method-name">RegisterNCTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;IT General Controls&apos;]&quot;}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;RITA&apos;, ip: &apos;192.168.29.28&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\91824\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51220}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c509a735fd1a690afba55596a045bb5
+*** Element info: {Using=xpath, value=//span[text()=&apos;IT General Controls&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at TestPages.RegisterNC.RegisterNCTest(RegisterNC.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">TestPages.LoginPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -187,13 +219,13 @@
                   </a> <!-- LoginTest -->
                   <span class="method-name">LoginTest</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;username&apos;]&quot;}
-  (Session info: chrome=113.0.5672.127)
+  (Session info: chrome=114.0.5735.134)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;RITA&apos;, ip: &apos;192.168.29.28&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\91824\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51650}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e354f6715094cdb62f4c54454618c6e6
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\91824\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cce8e2c08aa4706334781ad4c136f077
 *** Element info: {Using=xpath, value=//input[@name=&apos;username&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -216,165 +248,6 @@ Session ID: e354f6715094cdb62f4c54454618c6e6
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">TestPages.RegisterNC</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="RegisterNCTest">
-                  </a> <!-- RegisterNCTest -->
-                  <span class="method-name">RegisterNCTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;mat-button-wrapper&quot;&gt;...&lt;/span&gt; is not clickable at point (1259, 546). Other element would receive the click: &lt;div _ngcontent-ngw-c153=&quot;&quot; id=&quot;splash-screen&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=113.0.5672.127)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;RITA&apos;, ip: &apos;192.168.29.28&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\91824\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51720}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8795be625c7f46661257df01483ca3bf
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-	at GenericUtils.BaseClass.loginToApp(BaseClass.java:75)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 43 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">TestPages.Permission</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="PermissionManagement">
-                  </a> <!-- PermissionManagement -->
-                  <span class="method-name">PermissionManagement</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;mat-button-wrapper&quot;&gt;...&lt;/span&gt; is not clickable at point (1259, 546). Other element would receive the click: &lt;div _ngcontent-ced-c153=&quot;&quot; id=&quot;splash-screen&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=113.0.5672.127)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;RITA&apos;, ip: &apos;192.168.29.28&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\91824\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51696}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 154fe017bfdbc2d0d9eff04c84d988eb
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-	at GenericUtils.BaseClass.loginToApp(BaseClass.java:75)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 43 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">TestPages.CreateNewUser</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="NewUserTest">
-                  </a> <!-- NewUserTest -->
-                  <span class="method-name">NewUserTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;mat-button-wrapper&quot;&gt;...&lt;/span&gt; is not clickable at point (1259, 546). Other element would receive the click: &lt;div _ngcontent-prq-c153=&quot;&quot; id=&quot;splash-screen&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=113.0.5672.127)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;RITA&apos;, ip: &apos;192.168.29.28&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\91824\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8b3608fb31f880157ec989d70fae7df9
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-	at GenericUtils.BaseClass.loginToApp(BaseClass.java:75)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 43 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">TestPages.SoDDashboard</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="SoDDashboardTest">
-                  </a> <!-- SoDDashboardTest -->
-                  <span class="method-name">SoDDashboardTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;mat-button-wrapper&quot;&gt;...&lt;/span&gt; is not clickable at point (1259, 546). Other element would receive the click: &lt;div _ngcontent-crh-c153=&quot;&quot; id=&quot;splash-screen&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=113.0.5672.127)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;RITA&apos;, ip: &apos;192.168.29.28&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\91824\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cfc92ead770f2139773b8e10d1247d4b
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-	at GenericUtils.BaseClass.loginToApp(BaseClass.java:75)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 43 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestPages.iremadiation</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="SoDDashboardTest">
-                  </a> <!-- SoDDashboardTest -->
-                  <span class="method-name">SoDDashboardTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -393,14 +266,59 @@ Session ID: cfc92ead770f2139773b8e10d1247d4b
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestPages.ITGC</span>
+              <span class="class-name">TestPages.SoDDashboard</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ITGCTest">
-                  </a> <!-- ITGCTest -->
-                  <span class="method-name">ITGCTest</span>
+                  <a name="SoDDashboardTest">
+                  </a> <!-- SoDDashboardTest -->
+                  <span class="method-name">SoDDashboardTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestPages.CreateNewUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewUserTest">
+                  </a> <!-- NewUserTest -->
+                  <span class="method-name">NewUserTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestPages.iremadiation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SoDDashboardTest">
+                  </a> <!-- SoDDashboardTest -->
+                  <span class="method-name">SoDDashboardTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestPages.Permission</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PermissionManagement">
+                  </a> <!-- PermissionManagement -->
+                  <span class="method-name">PermissionManagement</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -416,6 +334,21 @@ Session ID: cfc92ead770f2139773b8e10d1247d4b
                   <a name="SoDMatrixpage">
                   </a> <!-- SoDMatrixpage -->
                   <span class="method-name">SoDMatrixpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestPages.ITGC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ITGCTest">
+                  </a> <!-- ITGCTest -->
+                  <span class="method-name">ITGCTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -482,46 +415,46 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginTest')
-data.setCell(0, 2, 'TestPages.LoginPage')
-data.setCell(0, 3, 20098);
+data.setCell(0, 1, 'RegisterNCTest')
+data.setCell(0, 2, 'TestPages.RegisterNC')
+data.setCell(0, 3, 32361);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SoDDashboardTest')
-data.setCell(1, 2, 'TestPages.iremadiation')
-data.setCell(1, 3, 19835);
+data.setCell(1, 1, 'LoginTest')
+data.setCell(1, 2, 'TestPages.LoginPage')
+data.setCell(1, 3, 20121);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'DSPage')
-data.setCell(2, 2, 'TestPages.DataSync')
-data.setCell(2, 3, 15232);
+data.setCell(2, 1, 'SoDDashboardTest')
+data.setCell(2, 2, 'TestPages.iremadiation')
+data.setCell(2, 3, 19311);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'ITGCTest')
-data.setCell(3, 2, 'TestPages.ITGC')
-data.setCell(3, 3, 14113);
+data.setCell(3, 1, 'DSPage')
+data.setCell(3, 2, 'TestPages.DataSync')
+data.setCell(3, 3, 14955);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'SoDMatrixpage')
-data.setCell(4, 2, 'TestPages.SoDMatrix')
-data.setCell(4, 3, 13003);
+data.setCell(4, 1, 'ITGCTest')
+data.setCell(4, 2, 'TestPages.ITGC')
+data.setCell(4, 3, 12815);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'PermissionManagement')
-data.setCell(5, 2, 'TestPages.Permission')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'SoDMatrixpage')
+data.setCell(5, 2, 'TestPages.SoDMatrix')
+data.setCell(5, 3, 11558);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'RegisterNCTest')
-data.setCell(6, 2, 'TestPages.RegisterNC')
-data.setCell(6, 3, 0);
+data.setCell(6, 1, 'SoDDashboardTest')
+data.setCell(6, 2, 'TestPages.SoDDashboard')
+data.setCell(6, 3, 11144);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'NewUserTest')
 data.setCell(7, 2, 'TestPages.CreateNewUser')
-data.setCell(7, 3, 0);
+data.setCell(7, 3, 6920);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'SoDDashboardTest')
-data.setCell(8, 2, 'TestPages.SoDDashboard')
-data.setCell(8, 3, 0);
+data.setCell(8, 1, 'PermissionManagement')
+data.setCell(8, 2, 'TestPages.Permission')
+data.setCell(8, 3, 5401);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -540,15 +473,6 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestPages.RegisterNC</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">bSuite</span>
-                <br/>
-                <span class="ignored-method-name">closeDB</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">TestPages.DataSync</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">bSuite</span>
@@ -558,34 +482,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestPages.Permission</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">bSuite</span>
-                <br/>
-                <span class="ignored-method-name">closeDB</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestPages.SoDMatrix</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">bSuite</span>
-                <br/>
-                <span class="ignored-method-name">closeDB</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestPages.ITGC</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">bSuite</span>
-                <br/>
-                <span class="ignored-method-name">closeDB</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestPages.CreateNewUser</span>
+              <span class="ignored-class-name">TestPages.RegisterNC</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">bSuite</span>
                 <br/>
@@ -603,7 +500,43 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
+              <span class="ignored-class-name">TestPages.CreateNewUser</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">bSuite</span>
+                <br/>
+                <span class="ignored-method-name">closeDB</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">TestPages.LoginPage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">bSuite</span>
+                <br/>
+                <span class="ignored-method-name">closeDB</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestPages.SoDMatrix</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">bSuite</span>
+                <br/>
+                <span class="ignored-method-name">closeDB</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestPages.Permission</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">bSuite</span>
+                <br/>
+                <span class="ignored-method-name">closeDB</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestPages.ITGC</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">bSuite</span>
                 <br/>
@@ -626,224 +559,218 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">1004 ms</span>
+                <span class="method-start">208 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">9658 ms</span>
+                <span class="method-start">5077 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SoDDashboardTest</span>
-                <span class="method-start">12066 ms</span>
+                <span class="method-start">7213 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutApp</span>
-                <span class="method-start">31911 ms</span>
+                <span class="method-start">26532 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">31916 ms</span>
+                <span class="method-start">26532 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPages.SoDMatrix</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">32124 ms</span>
+                <span class="method-start">26749 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">39360 ms</span>
+                <span class="method-start">31061 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SoDMatrixpage</span>
-                <span class="method-start">41655 ms</span>
+                <span class="method-start">33287 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutApp</span>
-                <span class="method-start">54659 ms</span>
+                <span class="method-start">44845 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">54659 ms</span>
+                <span class="method-start">44845 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPages.DataSync</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">54866 ms</span>
+                <span class="method-start">44979 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">61557 ms</span>
+                <span class="method-start">49386 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">DSPage</span>
-                <span class="method-start">63637 ms</span>
+                <span class="method-start">51666 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutApp</span>
-                <span class="method-start">78869 ms</span>
+                <span class="method-start">66621 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">78871 ms</span>
+                <span class="method-start">66621 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPages.LoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">79038 ms</span>
+                <span class="method-start">66934 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">85718 ms</span>
+                <span class="method-start">71973 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">LoginTest</span>
-                <span class="method-start">87842 ms</span>
+                <span class="method-start">74225 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutApp</span>
-                <span class="method-start">108689 ms</span>
+                <span class="method-start">94739 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">108690 ms</span>
+                <span class="method-start">94739 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPages.SoDDashboard</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">108845 ms</span>
+                <span class="method-start">95128 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">114754 ms</span>
+                <span class="method-start">100380 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SoDDashboardTest</span>
-                <span class="method-start">116077 ms</span>
+                <span class="method-start">102679 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutApp</span>
-                <span class="method-start">116080 ms</span>
+                <span class="method-start">113823 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">116082 ms</span>
+                <span class="method-start">113823 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPages.Permission</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">116083 ms</span>
+                <span class="method-start">113967 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">122926 ms</span>
+                <span class="method-start">118698 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">PermissionManagement</span>
-                <span class="method-start">124255 ms</span>
+                <span class="method-start">120945 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutApp</span>
-                <span class="method-start">124260 ms</span>
+                <span class="method-start">126346 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">124260 ms</span>
+                <span class="method-start">126346 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPages.RegisterNC</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">124261 ms</span>
+                <span class="method-start">126484 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">131723 ms</span>
+                <span class="method-start">131208 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">RegisterNCTest</span>
-                <span class="method-start">133060 ms</span>
+                <span class="method-start">133420 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutApp</span>
-                <span class="method-start">133062 ms</span>
+                <span class="method-start">166022 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">133063 ms</span>
+                <span class="method-start">166022 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPages.ITGC</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">133064 ms</span>
+                <span class="method-start">166278 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">139227 ms</span>
+                <span class="method-start">171012 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ITGCTest</span>
-                <span class="method-start">141598 ms</span>
+                <span class="method-start">173226 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutApp</span>
-                <span class="method-start">155712 ms</span>
+                <span class="method-start">186041 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">155713 ms</span>
+                <span class="method-start">186041 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPages.CreateNewUser</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">155898 ms</span>
+                <span class="method-start">186241 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">161192 ms</span>
+                <span class="method-start">190734 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">NewUserTest</span>
-                <span class="method-start">162427 ms</span>
+                <span class="method-start">192938 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutApp</span>
-                <span class="method-start">162430 ms</span>
+                <span class="method-start">199858 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">162431 ms</span>
+                <span class="method-start">199858 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPages.iremadiation</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">closeDB</span>
-                <span class="method-start">163591 ms</span>
+                <span class="method-start">201004 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

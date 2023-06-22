@@ -14,39 +14,6 @@
           <include name="loginToApp"/>
         </methods>
       </class> <!-- TestPages.RegisterNC -->
-      <class name="TestPages.Permission">
-        <methods>
-          <include name="PermissionManagement"/>
-          <include name="launchBrowser"/>
-          <include name="bSuite"/>
-          <include name="logoutApp"/>
-          <include name="closeBrowser"/>
-          <include name="closeDB"/>
-          <include name="loginToApp"/>
-        </methods>
-      </class> <!-- TestPages.Permission -->
-      <class name="TestPages.CreateNewUser">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="bSuite"/>
-          <include name="logoutApp"/>
-          <include name="closeBrowser"/>
-          <include name="closeDB"/>
-          <include name="NewUserTest"/>
-          <include name="loginToApp"/>
-        </methods>
-      </class> <!-- TestPages.CreateNewUser -->
-      <class name="TestPages.SoDDashboard">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="bSuite"/>
-          <include name="closeBrowser"/>
-          <include name="logoutApp"/>
-          <include name="closeDB"/>
-          <include name="SoDDashboardTest"/>
-          <include name="loginToApp"/>
-        </methods>
-      </class> <!-- TestPages.SoDDashboard -->
       <class name="TestPages.LoginPage">
         <methods>
           <include name="launchBrowser"/>

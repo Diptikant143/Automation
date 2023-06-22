@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestPages.excel">
+      <class name="TestPages.CreateNewUser">
         <methods>
           <include name="launchBrowser"/>
           <include name="bSuite"/>
           <include name="logoutApp"/>
           <include name="closeBrowser"/>
-          <include name="test"/>
           <include name="closeDB"/>
+          <include name="NewUserTest"/>
           <include name="loginToApp"/>
         </methods>
-      </class> <!-- TestPages.excel -->
+      </class> <!-- TestPages.CreateNewUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
