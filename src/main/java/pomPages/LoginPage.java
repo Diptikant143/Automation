@@ -10,28 +10,24 @@ public class LoginPage {
 	private WebElement userNameTextField;
 	
 	
-	@FindBy(xpath="//span[text()='LOGIN']")
-	private WebElement lohinbtn;
+	@FindBy(xpath="//input[@id='password']")
+	private WebElement propasswordTextField;
 	
 	
-	@FindBy(xpath="//input[@name='password']")
-	private WebElement passwordtextfield;
-	
-
-	@FindBy(xpath="//span[text()='LOGIN']")
-	private WebElement loginbtn2;
-	
-	
-	
+	@FindBy(xpath="//span[@class='mat-button-wrapper']")
+	private WebElement Loginbtn;
 	
 
-	public LoginPage(WebDriver driver) {
-	PageFactory.initElements(driver,this);
-		
+	@FindBy(xpath="//span[@class='mat-select-placeholder mat-select-min-line ng-tns-c189-7 ng-star-inserted']")
+	private WebElement clientbtn;
+	
+	
+	
+	public LoginPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver,this);
+		// TODO Auto-generated constructor stub
 	}
-
-
-
 
 
 
@@ -40,49 +36,23 @@ public class LoginPage {
 	}
 
 
-	
-	
 
-
-
-
-	public WebElement getLohinbtn() {
-		return lohinbtn;
+	public WebElement getPropasswordTextField() {
+		return propasswordTextField;
 	}
 
 
 
-
-
-
-	public WebElement getPasswordtextfield() {
-		return passwordtextfield;
+	public WebElement getLoginbtn() {
+		return Loginbtn;
 	}
 
 
 
-
-
-
-	public WebElement getLoginbtn2() {
-		return loginbtn2;
+	public WebElement getClientbtn() {
+		return clientbtn;
 	}
 	
-	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-
 	
 	
 	

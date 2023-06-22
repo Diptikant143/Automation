@@ -3,7 +3,6 @@ package GenericUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.AfterClass;
@@ -13,7 +12,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import pomPages.LoginPage;
 
 
@@ -24,88 +22,85 @@ public FileUtility fLib = new FileUtility();
 public WebDriverUtility wLib= new WebDriverUtility();
 public ExcelUtility eLib = new ExcelUtility();
 public JavaUtility jLib = new JavaUtility();
-
 public WebDriver driver;
-
 public static WebDriver sdriver=null;
-public String USERNAME;
-public String PASSWORD;
 
-@BeforeSuite
+
+
+
+
+@BeforeSuite(groups = {"smoketest"})
 public void bSuite() {
 
 }
 
 
-@BeforeClass
+@BeforeClass(groups = {"smoketest"})
 public void launchBrowser() throws Throwable {
 	//read data from property file
-	String BROWSER = fLib.getPropertyKeyValue("Browser");
+	String BROWSER = fLib.getPropertyKeyValue("browser");
 	String URL = fLib.getPropertyKeyValue("url");
-	
-	//driver=new ChromeDriver();
-	if (BROWSER.equalsIgnoreCase("edge")) {
-		WebDriverManager.edgedriver().setup();
-        driver = new EdgeDriver();
-    } else if (BROWSER.equalsIgnoreCase("chrome")) {
-    	WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        
-    } else {
-        System.out.println("Invalid browser specified.");
-        return;
-    }
+	/*
+	 * if(BROWSER.equalsIgnoreCase("chrome")) { driver=new ChromeDriver(); } else+ +
+	 * if(BROWSER.equalsIgnoreCase("firefox")) { driver = new FirefoxDriver(); }
+	 * else { System.out.println("Invalid Browser Name"); }
+	 */
+	/*
+	 * WebDriverListner regDriver=new WebDriverListner(); EventFiringWebDriver
+	 * eventDriver = new EventFiringWebDriver(driver);
+	 * eventDriver.register(regDriver);
+	 */
+	driver=new ChromeDriver();
 	System.out.println("===========Browser Launch Sucessfully===========");
 	wLib.maximiseWindow(driver);
 	wLib.waitUntilPageLoad(driver);
 	driver.get(URL);
 	sdriver=driver;
 }
-@BeforeMethod
+@BeforeMethod(groups = {"smoketest"})
 public void loginToApp() throws Throwable {
 //read data from property file
-	 USERNAME = fLib.getPropertyKeyValue("username");
-	 PASSWORD = fLib.getPropertyKeyValue("password");
+	String USERNAME = fLib.getPropertyKeyValue("username");
+	String PASSWORD = fLib.getPropertyKeyValue("password");
 	// login to app
 	//Login l= new Login(driver);
 	//l.loginToApp(driver);
-	//driver.findElement(By.xpath("//button[@class='secondary-button small-link']")).click();
-	//driver.findElement(By.xpath("//a[@id='proceed-link']")).click();
-	//LoginPage loginPage=new LoginPage(driver);
+	driver.findElement(By.xpath("//button[@class='secondary-button small-link']")).click();
+	driver.findElement(By.xpath("//a[@id='proceed-link']")).click();
+	LoginPage loginPage=new LoginPage(driver);
 	
-	//loginPage.getUserNameTextField().sendKeys(USERNAME);
+	loginPage.getUserNameTextField().sendKeys(USERNAME);
 	
-	//loginPage.getLoginbtn().click();
+	loginPage.getLoginbtn().click();
 	
-	//Thread.sleep(1000);
-	//loginPage.getPropasswordTextField().sendKeys(PASSWORD);
+	Thread.sleep(1000);
+	loginPage.getPropasswordTextField().sendKeys(PASSWORD);
 	
-	//driver.findElement(By.xpath("//span[@class='mat-button-wrapper']")).click();
-	
-	
-	//driver.findElement(By.xpath("//span[@class='mat-select-placeholder mat-select-min-line ng-tns-c189-7 ng-star-inserted']")).click();
+	driver.findElement(By.xpath("//span[@class='mat-button-wrapper']")).click();
 	
 	
-	//driver.findElement(By.xpath("//span[text()=' TESTINGANA ']")).click();
+	driver.findElement(By.xpath("//span[@class='mat-select-placeholder mat-select-min-line ng-tns-c189-7 ng-star-inserted']")).click();
 	
 	
-	//driver.findElement(By.xpath("//span[text()='LOGIN']")).click();
+	driver.findElement(By.xpath("(//span[@class='mat-option-text'])[2]")).click();
+	
+	
+	driver.findElement(By.xpath("//span[text()='LOGIN']")).click();
 	System.out.println("=============login sucessfull===========");
 }
-
-@AfterMethod
+@AfterMethod(groups = {"smoketest"})
 public void logoutApp() {
 	//sign out of home page
 	//Home h= new Home(driver);
 	///h.signOut(driver);
 	System.out.println("==========sign out sucessfull==========");
 }
-@AfterClass
+@AfterClass(groups = {"smoketest"})
 public void closeBrowser() {
-	driver.close();
+	//driver.close();
 	System.out.println("=====Browser close sucessfull============");
 }
-@AfterSuite
+@AfterSuite(groups = {"smoketest"})
 public void closeDB() {
 	//dLib.closeDB();
 	System.out.println("=============DB connection closed sucessfully======");

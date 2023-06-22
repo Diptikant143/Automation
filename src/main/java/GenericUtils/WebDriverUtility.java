@@ -1,18 +1,12 @@
 package GenericUtils;
 
-import java.awt.AWTException;
 import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.File;
-import java.time.LocalDateTime;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -181,29 +175,11 @@ public  class WebDriverUtility {
 		Files.copy(src, dest);
 		return screenshotPath;
 	}
-	public String TakesScreenShots(WebDriver driver,String screenshotName)
-    {
-        String localDateTime= LocalDateTime.now().toString().replace(":","-");
-        String filePath = System.getProperty("user.dir")+"/errorshots/"+screenshotName+localDateTime+".png";
-        TakesScreenshot ts = (TakesScreenshot)driver;
-        File scrFile = ts.getScreenshotAs(OutputType.FILE);
-        System.out.println(scrFile.toString()+"--------------------------------------------------------");
-File dest = new File(filePath);
-        try {
-            //FileUtils.copyFile(scrFile, dest);
-        	
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-        //System.out.println(dest.getAbsolutePath());
-        return dest.getAbsolutePath();
-
-    }
 	/**
 	 * 
 	 * This method is to take a Screenshot
 	 */
-	public void pressEnterKey() throws Throwable {
+	public void pressEnterKey(WebDriver driver) throws Throwable {
 		Robot rc=new Robot();
 		rc.keyPress(KeyEvent.VK_ENTER);
 		rc.keyRelease(KeyEvent.VK_ENTER);
@@ -221,45 +197,5 @@ File dest = new File(filePath);
 	
 	/**
 	 * This mehod is used for maximize the Window
-	 *
 	 */
-	
-	
-
-public void uploadFileWithRobot (String imagePath) {
-    StringSelection stringSelection = new StringSelection(imagePath);
-    Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-    clipboard.setContents(stringSelection, null);
-    Robot robot = null;
-    try {
-        robot = new Robot();
-    } catch (AWTException e) {
-        e.printStackTrace();
-    }
-    
-    robot.delay(2500);
-    
-    robot.keyPress(KeyEvent.VK_ENTER);
-    robot.keyRelease(KeyEvent.VK_ENTER);
-    robot.keyPress(KeyEvent.VK_CONTROL);
-    robot.keyPress(KeyEvent.VK_V);
-    robot.delay(2500);
-    robot.keyRelease(KeyEvent.VK_V);
-    robot.keyRelease(KeyEvent.VK_CONTROL);
-    robot.delay(2500);
-    robot.keyPress(KeyEvent.VK_ENTER);
-    robot.delay(150);
-    robot.keyRelease(KeyEvent.VK_ENTER);
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}
-}
-
-
+		}
