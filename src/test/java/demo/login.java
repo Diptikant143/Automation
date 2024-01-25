@@ -1,9 +1,9 @@
 package demo;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.IListenersAnnotation;
+
 import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
+
 
 import com.aventstack.extentreports.Status;
 
@@ -39,7 +39,6 @@ public class login extends BaseClass{
 		lo.getClickOnIRM().click();
 		lo.getLogoutButton().click();
 		ListnerImplementationClass.test.log(Status.INFO, "LOGIN SUCESSFULLY");
-
-
 }
+
 }

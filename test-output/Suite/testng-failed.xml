@@ -3,17 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="demo.login">
+      <class name="demo.configurationTest">
         <methods>
           <include name="launchBrowser"/>
           <include name="bSuite"/>
           <include name="logoutApp"/>
           <include name="closeBrowser"/>
           <include name="closeDB"/>
-          <include name="LoginPage"/>
           <include name="loginToApp"/>
+          <include name="configurationTest"/>
         </methods>
-      </class> <!-- demo.login -->
+      </class> <!-- demo.configurationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,19 +1,13 @@
 package demo;
 
 import org.testng.annotations.Test;
-import java.awt.AWTException;
+
 import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.StringSelection;
+
 import java.awt.event.KeyEvent;
-import java.util.concurrent.TimeUnit;
 
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 import GenericUtils.BaseClass;
@@ -76,7 +70,7 @@ public class Registerclient extends BaseClass{
 		client.getChooseDataSource().click();
 		rt.keyPress(KeyEvent.VK_TAB);
 		rt.keyRelease(KeyEvent.VK_TAB);
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		client.getChooseFile().click();
 		Thread.sleep(5000);
 	    wLib.uploadFileWithRobot(System. getProperty("user.dir")+"\\Data\\image.png");
@@ -103,7 +97,7 @@ public class Registerclient extends BaseClass{
 		client.getChooseModuleLicense().click();
 		client.getClickOnstartingdateField().click();
 		client.clickoncurrentdate(driver);
-		client.getClickOnendingdateField().sendKeys("31-Dec-2023");
+		client.getClickOnendingdateField().sendKeys("31-Dec-2024");
 		Thread.sleep(1000);
 		client.getAddButton().click();
 		ListnerImplementationClass.test.log(Status.INFO, "REGISTER NEW CLIENT IT GENERAL CONTROLS END SUCESSFULLY");
@@ -112,7 +106,7 @@ public class Registerclient extends BaseClass{
 		client.getIrmSetUp().click();
 		client.getClickOnstartingdateField().click();
 		client.clickoncurrentdate(driver);
-		client.getClickOnendingdateField().sendKeys("27-Dec-2023");
+		client.getClickOnendingdateField().sendKeys("31-Dec-2024");
 		Thread.sleep(1000);
 		client.getAddButton().click();
 		ListnerImplementationClass.test.log(Status.INFO, "REGISTER NEW CLIENT IRM SETUP & ADMIN ENDS SUCESSFULLY");
@@ -121,7 +115,7 @@ public class Registerclient extends BaseClass{
 		client.getIrmSuperAdmin().click();
 		client.getClickOnstartingdateField().click();
 		client.clickoncurrentdate(driver);
-		client.getClickOnendingdateField().sendKeys("28-Dec-2023");
+		client.getClickOnendingdateField().sendKeys("31-Dec-2024");
 		Thread.sleep(1000);
 		client.getAddButton().click();
 		ListnerImplementationClass.test.log(Status.INFO, "REGISTER NEW CLIENT IRM SUPER ADMIN ENDS SUCESSFULLY");
@@ -130,7 +124,7 @@ public class Registerclient extends BaseClass{
 		client.getImatrix().click();
 		client.getClickOnstartingdateField().click();
 		client.clickoncurrentdate(driver);
-		client.getClickOnendingdateField().sendKeys("28-Dec-2023");
+		client.getClickOnendingdateField().sendKeys("31-Dec-2024");
 		Thread.sleep(1000);
 		client.getAddButton().click();
 		ListnerImplementationClass.test.log(Status.INFO, "REGISTER NEW CLIENT IMATRIX ENDS SUCESSFULLY");
@@ -139,29 +133,35 @@ public class Registerclient extends BaseClass{
 		client.getDeveloper().click();
 		client.getClickOnstartingdateField().click();
 		client.clickoncurrentdate(driver);
-		client.getClickOnendingdateField().sendKeys("28-Dec-2023");
+		client.getClickOnendingdateField().sendKeys("31-Dec-2024");
 		Thread.sleep(1000);
 		client.getAddButton().click();
 		ListnerImplementationClass.test.log(Status.INFO, "REGISTER NEW CLIENT DEVELOPER STARTED SUCESSFULLY");
 		ListnerImplementationClass.test.log(Status.INFO, "REGISTER NEW CLIENT SMTP EMAIL STARTED SUCESSFULLY");
 		client.getModuleLicense().click();
+		rt.keyPress(KeyEvent.VK_END);
+		rt.keyRelease(KeyEvent.VK_END);
 		client.getSmtpEmail().click();
 		client.getClickOnstartingdateField().click();
 		client.clickoncurrentdate(driver);
-		client.getClickOnendingdateField().sendKeys("24-Dec-2023");
+		client.getClickOnendingdateField().sendKeys("31-Dec-2024");
 		Thread.sleep(1000);
 		client.getAddButton().click();
 		ListnerImplementationClass.test.log(Status.INFO, "REGISTER NEW CLIENT SMTP EMAIL ENDS SUCESSFULLY");
+		rt.keyPress(KeyEvent.VK_END);
+		rt.keyRelease(KeyEvent.VK_END);
 		//=====================click on next button====================================
+		Thread.sleep(2000);
 		client.getClickOnNextButton1().click();
 		ListnerImplementationClass.test.log(Status.INFO, "REGISTER NEW CLIENT ERP STARTED SUCESSFULLY");
 		client.getSourceERP().click();
 		client.getChooseSourceERP().click();
+		client.getClickAddButton().click();
 		Thread.sleep(1000);
 		if(client.getClickOnNextButton2().isDisplayed()) {
 			client.getClickOnNextButton2().click();
 		}else {
-			System.out.println("Element not chacting");
+			System.out.println("Element not cachting");
 		}
 		ListnerImplementationClass.test.log(Status.INFO, "REGISTER NEW CLIENT ERP ENDS SUCESSFULLY");
 		ListnerImplementationClass.test.log(Status.INFO, "REGISTER NEW CLIENT DEPLOYMENT STARTS SUCESSFULLY");

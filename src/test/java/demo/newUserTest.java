@@ -1,6 +1,5 @@
 package demo;
 
-import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
@@ -55,7 +54,7 @@ public class newUserTest extends BaseClass {
 		user.getChoosePermissionPolicy().click();
 		robot.keyPress(KeyEvent.VK_TAB);
 		robot.keyRelease(KeyEvent.VK_TAB);
-		user.getEndDate().sendKeys("12/28/2023");
+		user.getEndDate().sendKeys("12/28/2024");
 		user.getUncheckMail().click();
 		//user.getCreateANewUser().click();
 		user.getClickOnIRM().click();

@@ -1,6 +1,6 @@
 package pomPages;
 
-import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -9,9 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
 
-import GenericUtils.JavaUtility;
 
 public class RegisterNewClient {
 	
@@ -207,10 +205,10 @@ public class RegisterNewClient {
 	@FindBy(xpath="(//span[@class=\"mat-option-text\"])[11]")
 	private WebElement developer;
 	//=====================SMTP Email=======================================
-	@FindBy(xpath="(//span[@class=\"mat-option-text\"])[11]")
+	@FindBy(xpath="(//span[@class=\"mat-option-text\"])[13]")
 	private WebElement smtpEmail;
 	//=====================Click on Next button=======================================
-	@FindBy(xpath="//*[@id=\"cdk-step-content-0-2\"]/div/button[2]/span[1]")
+	@FindBy(xpath="(//span[text()='Next'])[2]")
 	private WebElement clickOnNextButton1;
 	//=====================Click on Next button=======================================
 	@FindBy(xpath="//*[@class=\"mat-select-placeholder mat-select-min-line ng-tns-c155-40 ng-star-inserted\"]")
@@ -218,6 +216,9 @@ public class RegisterNewClient {
 	
 	@FindBy(xpath="(//span[@class=\"mat-option-text\"])[2]")
 	private WebElement chooseSourceERP;
+	
+	@FindBy(xpath="//*[@id=\"cdk-step-content-0-3\"]/form/div/button/span[1]")
+	private WebElement clickAddButton;
 	
 	@FindBy(xpath="//*[@id=\"cdk-step-content-0-3\"]/div/button[2]/span[1]")
 	private WebElement clickOnNextButton2;
@@ -397,16 +398,26 @@ public class RegisterNewClient {
 	}
 
 	public WebElement getdate(WebDriver driver,String date) {
-		 return driver.findElement(By.xpath("//div[contains(.,'"+date+"') and @class='mat-calendar-body-cell-content mat-focus-indicator mat-calendar-body-today']"));
-		 //return dt;
+		 return driver.findElement(By.xpath("//div[contains(.,'" + date + "') and @class='mat-calendar-body-cell-content mat-focus-indicator mat-calendar-body-today']"));
+	   //return driver.findElement(By.xpath("//div[contains(.,'" + date + "') and @class='mat-calendar-body-cell-content mat-focus-indicator mat-calendar-body-today']"));
+
 	   }
 	
-	 public void clickoncurrentdate(WebDriver driver) 
+	 public void clickoncurrentdate(WebDriver driver) throws ParseException 
 	 {
-		DateFormat dateFormat = new SimpleDateFormat("dd");
-		Date date = new Date();
-		String date1= dateFormat.format(date);
-		getdate(driver,date1).click(); 
+		 //DateFormat dateFormat = new SimpleDateFormat("dd");
+		 //Date date = new Date();
+		 //String date1= dateFormat.format(date);
+		 //getdate(driver,date1).click(); 
+		 Date currentDate = new Date();
+		 int dayOfMonth = Integer.parseInt(new SimpleDateFormat("dd").format(currentDate));
+		 if (dayOfMonth >= 1 && dayOfMonth <= 9) {
+			 SimpleDateFormat dateFormat1 = new SimpleDateFormat("d");
+			 getdate(driver,dateFormat1.format(currentDate)).click();
+	        }else {
+	         SimpleDateFormat dateFormat1 = new SimpleDateFormat("dd");
+			 getdate(driver,dateFormat1.format(currentDate)).click();
+	        }
 	}
 
 	public WebElement getClickOnendingdateField() {
@@ -488,9 +499,9 @@ public class RegisterNewClient {
 	public WebElement getFinalOk() {
 		return finalOk;
 	}
+
+	public WebElement getClickAddButton() {
+		return clickAddButton;
+	}
 	
 }
-	
-	
-
-

@@ -21,8 +21,6 @@ public class LoginPage {
 	@FindBy(xpath="//span[text()='LOGIN']")
 	private WebElement loginbtn2;
 	
-	
-
 	@FindBy(xpath="//button[@class='secondary-button small-link']")
 	private WebElement clickOnAdvanced;
  

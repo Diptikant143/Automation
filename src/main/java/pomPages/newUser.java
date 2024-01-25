@@ -104,13 +104,13 @@ public class newUser {
 	@FindBy(xpath="//span[@class=\"mat-select-placeholder mat-select-min-line ng-tns-c155-16 ng-star-inserted\"]")
 	private WebElement client;
 	
-	@FindBy(xpath="//*[@id=\"mat-option-9\"]/mat-pseudo-checkbox")
+	@FindBy(xpath="//span[text()=' Test_Automation']")
 	private WebElement chooseClient;
 	
-	@FindBy(xpath="//span[@class=\"mat-select-placeholder mat-select-min-line ng-tns-c155-18 ng-star-inserted\"]")
+	@FindBy(xpath="//span[text()='Permission Policy']")
 	private WebElement permissionPolicy;
 	
-	@FindBy(xpath="//*[@id=\"mat-option-15\"]/mat-pseudo-checkbox")
+	@FindBy(xpath="//span[text()=' Test_Automation:Admin']")
 	private WebElement choosePermissionPolicy;
 	
 	@FindBy(xpath="//*[@id=\"mat-input-11\"]")

@@ -100,19 +100,19 @@ public class PermissionManagement {
 	@FindBy(xpath="//*[@id=\"mat-select-8-panel\"]/mat-select-filter/form/div/input")
 	private WebElement chooseTheCatagory;
 	
-	@FindBy(xpath="//span[@class=\"mat-option-text\"]")
+	@FindBy(xpath="(//span[@class=\"mat-option-text\"])[3]")
 	private WebElement chooseAsCountryHead;
 	
-	@FindBy(xpath="//*[@id=\"mat-select-value-7\"]/span")
+	@FindBy(xpath="//span[@class=\"mat-select-placeholder mat-select-min-line ng-tns-c155-20 ng-star-inserted\"]")
 	private WebElement selectAModule;
 	
-	@FindBy(xpath="//*[@id=\"mat-option-17\"]/span")
+	@FindBy(xpath="//span[text()='SMTP Email Notifications']")
 	private WebElement chooseImatrix;
 	
-	@FindBy(xpath="//*[@id=\"mat-select-value-11\"]/span")
+	@FindBy(xpath="//span[@class=\"mat-select-placeholder mat-select-min-line ng-tns-c155-22 ng-star-inserted\"]")
 	private WebElement defaultPage;
 	
-	@FindBy(xpath="//*[@id=\"mat-option-29\"]/span")
+	@FindBy(xpath="//span[text()='Email Configuration']")
 	private WebElement chooseDefaultPage;
 	
 	@FindBy(xpath="//*[@id=\"kt_content\"]/div[2]/div/app-permission-management/app-pm-body/app-pm-body-table/div[2]/div/div[2]/button/span[1]")
@@ -127,7 +127,15 @@ public class PermissionManagement {
 	@FindBy(xpath="(//a[@class=\"p-menuitem-link\"])[2]")
 	private WebElement logoutButton;
 	
+	@FindBy(xpath="(//span[@class=\"mat-button-wrapper\"])[1]")
+	private WebElement clickOnNewPolicy;
 	
+
+	
+	
+	public WebElement getClickOnNewPolicy() {
+		return clickOnNewPolicy;
+	}
 
 	public WebElement getClickOnIRM() {
 		return clickOnIRM;

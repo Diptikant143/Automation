@@ -4,7 +4,6 @@ package demo;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
-import org.testng.Assert;
 
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -53,13 +52,10 @@ public class Permission extends BaseClass{
 		per.getPermissionManagement().click();
 		per.getChooseACustomer().click();
 		per.getSelectYourClient().click();
-		//Assert.assertEquals(" Test_Automation ", "driver.find_element_by_xpath("//span[text()=' Test_Automation ']")");
+		per.getClickOnNewPolicy().click();
 		per.getPolicyName().sendKeys("Admin");
 		per.getChooseACatagory().click();
-		per.getChooseTheCatagory().sendKeys("Country Head");
 		per.getChooseAsCountryHead().click();
-		//robot.keyPress(KeyEvent.VK_TAB);
-		//robot.keyRelease(KeyEvent.VK_TAB);
 		per.getSelectAModule().click();
 		per.getChooseImatrix().click();
 		per.getDefaultPage().click();
