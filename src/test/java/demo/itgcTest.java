@@ -44,7 +44,8 @@ public class itgcTest extends BaseClass{
 		itgc.getImportExcelRuleSet().click();
 		itgc.importRuleSetChooseERPPopup(driver);
 		itgc.getChooseFile().click();
-		wLib.uploadFileWithRobot(System. getProperty("user.dir")+"\\Data\\ADQ_Fusion_ITGC_Ruleset_V1.0.xlsx");
+		//wLib.uploadFileWithRobot(System. getProperty("user.dir")+"\\Data\\ADQ_Fusion_ITGC_Ruleset_V1.0.xlsx");  //for fusion
+		wLib.uploadFileWithRobot(System. getProperty("user.dir")+"\\Data\\Acino_SAP_ITGC_Ruleset_V3.0.xlsx");     //For SAP
 		itgc.getSelectAllCheckBox().click();
 		robot.keyPress(KeyEvent.VK_END);
 		robot.keyRelease(KeyEvent.VK_END);

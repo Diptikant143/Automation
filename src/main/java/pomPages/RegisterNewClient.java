@@ -37,10 +37,10 @@ public class RegisterNewClient {
 
 
 	
-	@FindBy(xpath = "//div[@class='mat-form-field-infix ng-tns-c146-6']")
+	@FindBy(xpath = "//div[@class='mat-select-trigger ng-tns-c155-8']")
     private WebElement dropdownElement;
 	
-	@FindBy(xpath = "//span[@class='mat-option-text'][1]")
+	@FindBy(xpath = "//span[text()=' iRM Super Admin ']")
     private WebElement chooseIRM;
 
 	public RegisterNewClient(WebDriver driver) {

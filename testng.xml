@@ -3,10 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="demo.login"/>
-      <class name="demo.Registerclient"/>
-      <class name="demo.Permission"/>
-       <class name="demo.newUserTest"/>
+      <class name="demo.ITGCITACDashBoard"/>
+      <class name="demo.itacTest"/>
+      <class name="demo.itgcTest"/>
+      <class name="demo.sodSelectionTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

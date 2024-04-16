@@ -42,14 +42,15 @@ public class sodSelectionTest extends BaseClass {
 		sod.varifyChooseErpPopup(driver);
 		Thread.sleep(1000);
 		sod.getChooseFile().click();
-		wLib.uploadFileWithRobot(System. getProperty("user.dir")+"\\Data\\iRM_198_ADQ_Ruleset_29-08-2023 5.xlsx");
+		//wLib.uploadFileWithRobot(System. getProperty("user.dir")+"\\Data\\iRM_198_ADQ_Ruleset_29-08-2023 5.xlsx");    //For fusion
+		wLib.uploadFileWithRobot(System. getProperty("user.dir")+"\\Data\\SAP_13Sep2023_Acino_TRPReviewed_Finalised_Rulebook 2.xlsx");   //For SAP
 		sod.getCheckBoxForAll().click();
 		robot.keyPress(KeyEvent.VK_END);
 		robot.keyRelease(KeyEvent.VK_END);
 		Thread.sleep(1000);
 		sod.getRuleSetname().sendKeys("Fusion198RuleSet");
 		//sod.getSaveRule().click();
-		sod.sodRuleSetPopup(driver);
+		//sod.sodRuleSetPopup(driver);
 		sod.getClickOnUsername().click();
 		sod.getLogOutButton().click();
 		ListnerImplementationClass.test.log(Status.INFO, "SOD PAGE STARTS HERE");

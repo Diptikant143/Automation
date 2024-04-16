@@ -27,7 +27,9 @@ public class LoginPage {
 	@FindBy(xpath="//a[@id='proceed-link']")
 	private WebElement clickOnUnsafeLink;
 	
-	@FindBy(xpath = "//div[@class='mat-form-field-infix ng-tns-c146-6']")
+	@FindBy(xpath = "//div[@class='mat-select-trigger ng-tns-c155-8']")
+	//class="mat-select-trigger ng-tns-c155-8"
+	//class="mat-select-placeholder mat-select-min-line ng-tns-c155-8 ng-star-inserted"
     private WebElement dropdownElement;
 	
 	@FindBy(xpath = "//span[@class='mat-option-text'][1]")

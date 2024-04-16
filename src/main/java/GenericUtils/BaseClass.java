@@ -2,7 +2,10 @@ package GenericUtils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -51,6 +54,8 @@ public void launchBrowser() throws Throwable {
     	System.setProperty("webdriver.chrome.driver", "C:\\Users\\SaikatDas\\OneDrive - RISKSUCCESS PRIVATE LIMITED\\Documents\\Automation-main\\Automation-main\\chromedriver.exe");
 
         driver = new ChromeDriver();
+		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+		capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         
     } else {
         System.out.println("Invalid browser specified.");

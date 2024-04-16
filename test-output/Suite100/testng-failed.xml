@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite100]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="demo.login">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="bSuite"/>
+          <include name="logoutApp"/>
+          <include name="closeBrowser"/>
+          <include name="closeDB"/>
+          <include name="LoginPage"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- demo.login -->
+      <class name="demo.Registerclient">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="bSuite"/>
+          <include name="logoutApp"/>
+          <include name="closeBrowser"/>
+          <include name="closeDB"/>
+          <include name="REGISTERNEWCLIENT"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- demo.Registerclient -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite100] -->

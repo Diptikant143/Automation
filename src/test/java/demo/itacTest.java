@@ -44,7 +44,8 @@ public class itacTest extends BaseClass{
 		itac.getImportExcelRuleSet().click();
 		itac.importRuleSetChooseERPPopup(driver);
 		itac.getChooseFile().click();
-		wLib.uploadFileWithRobot(System. getProperty("user.dir")+"\\Data\\ADQ_Fusion_ITAC_Ruleset_V1.0.xlsx");
+		//wLib.uploadFileWithRobot(System. getProperty("user.dir")+"\\Data\\ADQ_Fusion_ITAC_Ruleset_V1.0.xlsx"); //for fusion
+		wLib.uploadFileWithRobot(System. getProperty("user.dir")+"\\Data\\Acino_SAP_ITAC_Ruleset_V1.0.xlsx"); //for sap
 		itac.getSelectAllCheckBox().click();
 		robot.keyPress(KeyEvent.VK_END);
 		robot.keyRelease(KeyEvent.VK_END);

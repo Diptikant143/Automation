@@ -23,10 +23,11 @@ public class itac {
 	@FindBy(xpath="//a[@id='proceed-link']")
 	private WebElement clickOnUnsafeLink;
 	
-	@FindBy(xpath = "//div[@class='mat-form-field-infix ng-tns-c146-6']")
+	@FindBy(xpath = "//div[@class='mat-select-trigger ng-tns-c155-8']")
     private WebElement dropdownElement;
 	
-	@FindBy(xpath = "(//span[@class=\"mat-option-text\"])[1]")
+	//@FindBy(xpath = "//span[text()=' TEST30TH ']")
+	@FindBy(xpath = "//span[text()=' TESTSAP26TH ']")
     private WebElement chooseClient;
 	
 	@FindBy(xpath="//a[@class=\"dropdown-toggle btn-icon setting-btn btn-default ml-2 h-34 w-34 flex-shrink-0\"]")
@@ -38,7 +39,7 @@ public class itac {
 	@FindBy(xpath = "(//span[text()='ITGC and ITAC Selection'])[2]")
     private WebElement itgcAndItacSection;
 	
-	@FindBy(xpath = "(//span[@class='mat-button-wrapper'])[2]")
+	@FindBy(xpath = "//span[text()=' Create New Rule Set ']")
     private WebElement createNewRuleSet;
 	
 	@FindBy(xpath = "//span[text()=' ITGC/ITAC ']")
@@ -56,7 +57,8 @@ public class itac {
 	@FindBy(xpath = "//b[normalize-space()='Choose ERP']")
     private WebElement chooseERP;
 	
-	@FindBy(xpath = "//span[text()='Oracle Fusion']")
+	//@FindBy(xpath = "//span[text()='Oracle Fusion']")
+	@FindBy(xpath = "//span[text()='SAP ECC']")
     private WebElement oracleFusion;
 	
 	@FindBy(xpath = "(//div[@class='center ng-star-inserted'])[3]")
@@ -65,7 +67,7 @@ public class itac {
 	@FindBy(xpath = "//div[@class='p-checkbox-box']")
     private WebElement selectAllCheckBox;
 	
-	@FindBy(xpath = "//input[@id='mat-input-7']")
+	@FindBy(xpath = "//input[@name='name']")
     private WebElement rulesetName;
 	
 	@FindBy(xpath = "//span[text()='Save']")
