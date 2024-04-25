@@ -1,41 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="4" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="demo.itgcTest">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="bSuite"/>
-          <include name="closeBrowser"/>
-          <include name="logoutApp"/>
-          <include name="itgcTest"/>
-          <include name="closeDB"/>
-          <include name="loginToApp"/>
-        </methods>
-      </class> <!-- demo.itgcTest -->
-      <class name="demo.sodSelectionTest">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="bSuite"/>
-          <include name="logoutApp"/>
-          <include name="closeBrowser"/>
-          <include name="closeDB"/>
-          <include name="sodSelectionTest"/>
-          <include name="loginToApp"/>
-        </methods>
-      </class> <!-- demo.sodSelectionTest -->
       <class name="demo.itacTest">
         <methods>
           <include name="launchBrowser"/>
           <include name="bSuite"/>
           <include name="itacTest"/>
-          <include name="closeBrowser"/>
           <include name="logoutApp"/>
+          <include name="closeBrowser"/>
           <include name="closeDB"/>
           <include name="loginToApp"/>
         </methods>
       </class> <!-- demo.itacTest -->
+      <class name="demo.ITGCITACDashBoard">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="bSuite"/>
+          <include name="closeBrowser"/>
+          <include name="logoutApp"/>
+          <include name="closeDB"/>
+          <include name="itgcdashboardDashboard"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- demo.ITGCITACDashBoard -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
