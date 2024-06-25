@@ -7,8 +7,8 @@
         <methods>
           <include name="launchBrowser"/>
           <include name="bSuite"/>
-          <include name="closeBrowser"/>
           <include name="logoutApp"/>
+          <include name="closeBrowser"/>
           <include name="closeDB"/>
           <include name="itgcdashboardDashboard"/>
           <include name="loginToApp"/>

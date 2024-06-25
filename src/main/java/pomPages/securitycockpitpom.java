@@ -24,7 +24,7 @@ public class securitycockpitpom {
 	//@FindBy(xpath = "//span[text()=' TESTSAP26TH ']")
 	@FindBy(xpath = "//span[text()=' TestFusion11 ']")
     private WebElement chooseClient;
-	@FindBy(xpath="//span[@class='svg-icon svg-icon-md']")
+	@FindBy(xpath="//*[name()='svg' and @class='ionicon']")
 	private WebElement clickOnhamburgur;
 
 	@FindBy(xpath="(//span[text()='Setup and Administration'])[3]")

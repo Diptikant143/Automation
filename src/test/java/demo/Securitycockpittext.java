@@ -3,6 +3,8 @@ package demo;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import GenericUtils.BaseClass;
 import GenericUtils.ListnerImplementationClass;
 import pomPages.securitycockpitpom;
@@ -12,7 +14,7 @@ public class Securitycockpittext extends BaseClass {
 
 	@Test
 	public void Security() throws Throwable{
-		//ListnerImplementationClass.test.log(Status.INFO, "LOGIN");
+		ListnerImplementationClass.test.log(Status.INFO, "LOGIN");
 		ListnerImplementationClass.test.assignAuthor("DIPTIKANTA");
 		ListnerImplementationClass.test.assignDevice("windows 64");
 		securitycockpitpom cock=new securitycockpitpom(driver);
