@@ -1,5 +1,7 @@
 package demo;
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -28,9 +30,11 @@ public class Securitycockpittext extends BaseClass {
 		cock.getDropdownElement().click();
 		cock.getChooseClient().click();
 		cock.getLohinbtn().click();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		cock.getClickOnhamburgur().click();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		cock.getClickOnsetup().click();
-		Thread.sleep(5000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		cock.getSecurityCockpit(driver);
 		cock.getClickOnhamburgur().click();
 		cock.getClickonuserdownarrey().click();

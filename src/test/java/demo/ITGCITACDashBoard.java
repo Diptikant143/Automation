@@ -74,7 +74,7 @@ public class ITGCITACDashBoard extends BaseClass{
 		//Thread.sleep(2000);
 		dashboard.getAccessGovernenceYellow().click();
 		//Thread.sleep(1000);
-		/*dashboard.getAccessGovernenceYellowSorting().click();
+		dashboard.getAccessGovernenceYellowSorting().click();
 		dashboard.getAccessGovernenceYellowSorting().click();
 		//Thread.sleep(1000);
 		dashboard.getDownloadExcel().click();
@@ -237,7 +237,6 @@ public class ITGCITACDashBoard extends BaseClass{
 		robot.keyRelease(KeyEvent.VK_TAB);
 		dashboard.scrollToTheFast(driver);
 		ListnerImplementationClass.test.log(Status.INFO, "LIST OF ITAC ENDS HERE");
-		*/
 	}
 	
 	
