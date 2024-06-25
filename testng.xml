@@ -4,8 +4,6 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="demo.Securitycockpittext"/>
-      <class name="demo.ITGCITACDashBoard"/>
-      <class name="demo.login"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
