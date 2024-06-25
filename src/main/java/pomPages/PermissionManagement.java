@@ -32,7 +32,7 @@ public class PermissionManagement {
 	@FindBy(xpath="//a[@id='proceed-link']")
 	private WebElement clickOnUnsafeLink;
 	
-	@FindBy(xpath = "//div[@class='mat-select-trigger ng-tns-c155-8']")
+	@FindBy(xpath = "//div[@class='mat-form-field-infix ng-tns-c146-8']")
     private WebElement dropdownElement;
 	
 	@FindBy(xpath = "//span[@class='mat-option-text'][1]")
@@ -88,7 +88,7 @@ public class PermissionManagement {
 	@FindBy(xpath="//*[@id=\"mat-select-value-3\"]/span")
 	private WebElement chooseACustomer;
 	
-	@FindBy(xpath="//span[text()=' Test_Automation ']")
+	@FindBy(xpath="//span[text()=' TestFusion11 ']")
 	private WebElement selectYourClient;
 	
 	@FindBy(xpath="//*[@id=\"mat-input-5\"]")
@@ -103,7 +103,7 @@ public class PermissionManagement {
 	@FindBy(xpath="(//span[@class=\"mat-option-text\"])[3]")
 	private WebElement chooseAsCountryHead;
 	
-	@FindBy(xpath="//span[@class=\"mat-select-placeholder mat-select-min-line ng-tns-c155-20 ng-star-inserted\"]")
+	@FindBy(xpath="/html[1]/body[1]/app-layout[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/app-permission-management[1]/app-pm-body[1]/app-pm-body-table[1]/div[2]/div[1]/div[1]/div[3]/mat-form-field[1]/div[1]/div[1]/div[1]/mat-select[1]/div[1]/div[1]/span[1]")
 	private WebElement selectAModule;
 	
 	@FindBy(xpath="//span[text()='SMTP Email Notifications']")

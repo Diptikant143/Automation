@@ -38,7 +38,7 @@ public class Registerclient extends BaseClass{
 		client.getDropdownElement().click();
 		client.getChooseIRM().click();
 		client.getLoginbtn2().click();
-		
+		Thread.sleep(7000);
 		//=====================================Register new client begins==========================
 		client.getClickOnHamBurgerSign().click();
 		client.getRegisterNewClientDropdown().click();

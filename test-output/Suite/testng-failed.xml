@@ -14,6 +14,17 @@
           <include name="loginToApp"/>
         </methods>
       </class> <!-- demo.itacTest -->
+      <class name="demo.sodSelectionTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="bSuite"/>
+          <include name="logoutApp"/>
+          <include name="closeBrowser"/>
+          <include name="closeDB"/>
+          <include name="sodSelectionTest"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- demo.sodSelectionTest -->
       <class name="demo.ITGCITACDashBoard">
         <methods>
           <include name="launchBrowser"/>

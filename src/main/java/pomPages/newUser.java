@@ -30,7 +30,7 @@ public class newUser {
 	@FindBy(xpath="//a[@id='proceed-link']")
 	private WebElement clickOnUnsafeLink;
 	
-	@FindBy(xpath = "//div[@class='mat-select-trigger ng-tns-c155-8']")
+	@FindBy(xpath = "//div[@class='mat-form-field-infix ng-tns-c146-8']")
     private WebElement dropdownElement;
 	
 	@FindBy(xpath = "//span[@class='mat-option-text'][1]")
@@ -74,7 +74,7 @@ public class newUser {
 	}
 	//====================This is for login ends=====================================
 	//====================new user starts============================================
-	@FindBy(xpath="//*[@class='ionicon']")
+	@FindBy(xpath="//*[name()='svg' and @class='ionicon']")
 	private WebElement clickOnHamBurgerSign;
 
 	@FindBy(xpath="//*[@id=\"kt_aside_menu_top\"]/ul/li[7]/a/span[2]")
@@ -101,16 +101,16 @@ public class newUser {
 	@FindBy(xpath="//*[@id=\"mat-input-10\"]")
 	private WebElement password;
 
-	@FindBy(xpath="//span[@class=\"mat-select-placeholder mat-select-min-line ng-tns-c155-16 ng-star-inserted\"]")
+	@FindBy(xpath="//*[@id=\"kt_content\"]/div[2]/div/app-create-and-edit-user-combined/div/div/app-create-and-edit-user/div/div/mat-card/mat-card-content/form/table/tr[4]/mat-form-field[1]/div/div[1]/div")
 	private WebElement client;
 	
-	@FindBy(xpath="//span[text()=' Test_Automation']")
+	@FindBy(xpath="//span[text()=' TestFusion11']")
 	private WebElement chooseClient;
 	
 	@FindBy(xpath="//span[text()='Permission Policy']")
 	private WebElement permissionPolicy;
 	
-	@FindBy(xpath="//span[text()=' Test_Automation:Admin']")
+	@FindBy(xpath="//span[text()=' TestFusion11:Admin']")
 	private WebElement choosePermissionPolicy;
 	
 	@FindBy(xpath="//*[@id=\"mat-input-11\"]")

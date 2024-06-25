@@ -56,6 +56,7 @@ public class Permission extends BaseClass{
 		per.getPolicyName().sendKeys("Admin");
 		per.getChooseACatagory().click();
 		per.getChooseAsCountryHead().click();
+		Thread.sleep(5000);
 		per.getSelectAModule().click();
 		per.getChooseImatrix().click();
 		per.getDefaultPage().click();

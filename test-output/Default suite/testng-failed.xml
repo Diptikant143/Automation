@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo.Registerclient">
+      <class name="demo.ITGCITACDashBoard">
         <methods>
           <include name="launchBrowser"/>
           <include name="bSuite"/>
-          <include name="logoutApp"/>
           <include name="closeBrowser"/>
+          <include name="logoutApp"/>
           <include name="closeDB"/>
-          <include name="REGISTERNEWCLIENT"/>
+          <include name="itgcdashboardDashboard"/>
           <include name="loginToApp"/>
         </methods>
-      </class> <!-- demo.Registerclient -->
+      </class> <!-- demo.ITGCITACDashBoard -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

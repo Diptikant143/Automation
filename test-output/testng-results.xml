@@ -1,107 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="10" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-17T13:44:33 IST" name="Suite" finished-at="2024-04-17T13:47:07 IST" duration-ms="153851">
+  <suite started-at="2024-06-25T11:29:06 IST" name="Default suite" finished-at="2024-06-25T11:30:15 IST" duration-ms="69101">
     <groups>
     </groups>
-    <test started-at="2024-04-17T13:44:33 IST" name="Test" finished-at="2024-04-17T13:47:07 IST" duration-ms="153851">
-      <class name="demo.itgcTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:demo.itgcTest@55182842]" started-at="2024-04-17T13:46:06 IST" name="launchBrowser" finished-at="2024-04-17T13:46:08 IST" duration-ms="2136" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:demo.itgcTest@55182842]" started-at="2024-04-17T13:46:08 IST" name="loginToApp" finished-at="2024-04-17T13:46:08 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method signature="itgcTest()[pri:0, instance:demo.itgcTest@55182842]" started-at="2024-04-17T13:46:08 IST" name="itgcTest" finished-at="2024-04-17T13:46:33 IST" duration-ms="25546" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- itgcTest -->
-        <test-method is-config="true" signature="logoutApp()[pri:0, instance:demo.itgcTest@55182842]" started-at="2024-04-17T13:46:33 IST" name="logoutApp" finished-at="2024-04-17T13:46:33 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutApp -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:demo.itgcTest@55182842]" started-at="2024-04-17T13:46:33 IST" name="closeBrowser" finished-at="2024-04-17T13:46:33 IST" duration-ms="135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- demo.itgcTest -->
-      <class name="demo.itacTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:demo.itacTest@55141def]" started-at="2024-04-17T13:45:39 IST" name="launchBrowser" finished-at="2024-04-17T13:45:42 IST" duration-ms="2571" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:demo.itacTest@55141def]" started-at="2024-04-17T13:45:42 IST" name="loginToApp" finished-at="2024-04-17T13:45:42 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method signature="itacTest()[pri:0, instance:demo.itacTest@55141def]" started-at="2024-04-17T13:45:42 IST" name="itacTest" finished-at="2024-04-17T13:46:05 IST" duration-ms="23766" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- itacTest -->
-        <test-method is-config="true" signature="logoutApp()[pri:0, instance:demo.itacTest@55141def]" started-at="2024-04-17T13:46:05 IST" name="logoutApp" finished-at="2024-04-17T13:46:05 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutApp -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:demo.itacTest@55141def]" started-at="2024-04-17T13:46:05 IST" name="closeBrowser" finished-at="2024-04-17T13:46:06 IST" duration-ms="183" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- demo.itacTest -->
-      <class name="demo.ITGCITACDashBoard">
-        <test-method is-config="true" signature="bSuite()[pri:0, instance:demo.ITGCITACDashBoard@4d5d943d]" started-at="2024-04-17T13:44:33 IST" name="bSuite" finished-at="2024-04-17T13:44:33 IST" duration-ms="11" status="PASS">
+    <test started-at="2024-06-25T11:29:06 IST" name="Default test" finished-at="2024-06-25T11:30:15 IST" duration-ms="69101">
+      <class name="demo.Securitycockpittext">
+        <test-method is-config="true" signature="bSuite()[pri:0, instance:demo.Securitycockpittext@7c7b252e]" started-at="2024-06-25T11:29:06 IST" name="bSuite" finished-at="2024-06-25T11:29:06 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bSuite -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:demo.ITGCITACDashBoard@4d5d943d]" started-at="2024-04-17T13:44:33 IST" name="launchBrowser" finished-at="2024-04-17T13:44:37 IST" duration-ms="4015" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:demo.Securitycockpittext@7c7b252e]" started-at="2024-06-25T11:29:06 IST" name="launchBrowser" finished-at="2024-06-25T11:29:27 IST" duration-ms="21381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:demo.ITGCITACDashBoard@4d5d943d]" started-at="2024-04-17T13:44:37 IST" name="loginToApp" finished-at="2024-04-17T13:44:37 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:demo.Securitycockpittext@7c7b252e]" started-at="2024-06-25T11:29:27 IST" name="loginToApp" finished-at="2024-06-25T11:29:27 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="itgcdashboardDashboard()[pri:0, instance:demo.ITGCITACDashBoard@4d5d943d]" started-at="2024-04-17T13:44:37 IST" name="itgcdashboardDashboard" finished-at="2024-04-17T13:45:39 IST" duration-ms="61464" status="PASS">
+        <test-method signature="Security()[pri:0, instance:demo.Securitycockpittext@7c7b252e]" started-at="2024-06-25T11:29:27 IST" name="Security" finished-at="2024-06-25T11:30:15 IST" duration-ms="47330" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- itgcdashboardDashboard -->
-        <test-method is-config="true" signature="logoutApp()[pri:0, instance:demo.ITGCITACDashBoard@4d5d943d]" started-at="2024-04-17T13:45:39 IST" name="logoutApp" finished-at="2024-04-17T13:45:39 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Security -->
+        <test-method is-config="true" signature="logoutApp()[pri:0, instance:demo.Securitycockpittext@7c7b252e]" started-at="2024-06-25T11:30:15 IST" name="logoutApp" finished-at="2024-06-25T11:30:15 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutApp -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:demo.ITGCITACDashBoard@4d5d943d]" started-at="2024-04-17T13:45:39 IST" name="closeBrowser" finished-at="2024-04-17T13:45:39 IST" duration-ms="168" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:demo.Securitycockpittext@7c7b252e]" started-at="2024-06-25T11:30:15 IST" name="closeBrowser" finished-at="2024-06-25T11:30:15 IST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="closeDB()[pri:0, instance:demo.ITGCITACDashBoard@4d5d943d]" started-at="2024-04-17T13:47:08 IST" name="closeDB" finished-at="2024-04-17T13:47:08 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeDB()[pri:0, instance:demo.Securitycockpittext@7c7b252e]" started-at="2024-06-25T11:30:15 IST" name="closeDB" finished-at="2024-06-25T11:30:15 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDB -->
-      </class> <!-- demo.ITGCITACDashBoard -->
-      <class name="demo.sodSelectionTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:demo.sodSelectionTest@3270d194]" started-at="2024-04-17T13:46:33 IST" name="launchBrowser" finished-at="2024-04-17T13:46:36 IST" duration-ms="2146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:demo.sodSelectionTest@3270d194]" started-at="2024-04-17T13:46:36 IST" name="loginToApp" finished-at="2024-04-17T13:46:36 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method signature="sodSelectionTest()[pri:0, instance:demo.sodSelectionTest@3270d194]" started-at="2024-04-17T13:46:36 IST" name="sodSelectionTest" finished-at="2024-04-17T13:47:07 IST" duration-ms="31293" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sodSelectionTest -->
-        <test-method is-config="true" signature="logoutApp()[pri:0, instance:demo.sodSelectionTest@3270d194]" started-at="2024-04-17T13:47:07 IST" name="logoutApp" finished-at="2024-04-17T13:47:07 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutApp -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:demo.sodSelectionTest@3270d194]" started-at="2024-04-17T13:47:07 IST" name="closeBrowser" finished-at="2024-04-17T13:47:07 IST" duration-ms="163" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- demo.sodSelectionTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- demo.Securitycockpittext -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

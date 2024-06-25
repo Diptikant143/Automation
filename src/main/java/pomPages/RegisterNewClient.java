@@ -37,7 +37,7 @@ public class RegisterNewClient {
 
 
 	
-	@FindBy(xpath = "//div[@class='mat-select-trigger ng-tns-c155-8']")
+	@FindBy(xpath = "//div[@class='mat-form-field-infix ng-tns-c146-8']")
     private WebElement dropdownElement;
 	
 	@FindBy(xpath = "//span[text()=' iRM Super Admin ']")
@@ -83,7 +83,7 @@ public class RegisterNewClient {
 //We can comment it later
 //==============================Starts Register New Client form here=======================================
 //==============================Starts Register New Client General=========================================
-	@FindBy(xpath="//*[@class='ionicon']")
+	@FindBy(xpath="//*[name()='svg' and @class='ionicon']")
 	private WebElement clickOnHamBurgerSign;
 	
 	@FindBy(xpath="//*[@id=\"kt_aside_menu_top\"]/ul/li[6]/a/span[2]")

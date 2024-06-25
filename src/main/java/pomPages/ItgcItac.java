@@ -24,10 +24,10 @@ public class ItgcItac {
 	@FindBy(xpath="//a[@id='proceed-link']")
 	private WebElement clickOnUnsafeLink;
 	
-	@FindBy(xpath = "//div[@class='mat-select-trigger ng-tns-c155-8']")
+	@FindBy(xpath = "//div[@class='mat-form-field-infix ng-tns-c146-8']")
     private WebElement dropdownElement;
 	
-	@FindBy(xpath = "//span[text()=' TESTSAP26TH ']")
+	@FindBy(xpath = "//span[text()=' Test_Fusion_001 ']")
 	//@FindBy(xpath = "//span[text()=' TEST30TH ']")
     private WebElement chooseClient;
 	
@@ -63,12 +63,15 @@ public class ItgcItac {
 	@FindBy(xpath="//*[@id='mat-dialog-0']/app-itgc-count-drilldown/div/div[1]/mat-icon/img")
 	private WebElement crossButton;
 	
-	@FindBy(xpath="(//*[text()='1'])[2]")
+	@FindBy(css="highcharts-v7ohyl7-0 .highcharts-background")
 	private WebElement accessGovernenceYellow;
 	
-	@FindBy(xpath="(//th[text()=' Control ID '])[2]")
+	@FindBy(xpath="(//*[name()='rect'][@class='highcharts-point'])[1]")
 	private WebElement accessGovernenceYellowSorting;
 	
+	@FindBy(xpath="(//*[text()='1'])[2]")
+	private WebElement accessGovernenceRed;
+
 	@FindBy(xpath="//*[@id='mat-dialog-1']/app-itgc-itac-generic-drilldown/div/div[1]/button[2]/img")
 	private WebElement maximizeButton;
 	

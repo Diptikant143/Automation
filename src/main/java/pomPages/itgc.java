@@ -23,11 +23,11 @@ public class itgc {
 	@FindBy(xpath="//a[@id='proceed-link']")
 	private WebElement clickOnUnsafeLink;
 	
-	@FindBy(xpath = "//div[@class='mat-select-trigger ng-tns-c155-8']")
+	@FindBy(xpath = "//div[@class='mat-form-field-infix ng-tns-c146-8']")
     private WebElement dropdownElement;
 	
 	//@FindBy(xpath = "//span[text()=' TEST30TH ']")
-	@FindBy(xpath = "//span[text()=' TESTSAP26TH ']")
+	@FindBy(xpath = "//span[text()=' TestFusion11 ']")
     private WebElement chooseClient;
 	
 	@FindBy(xpath="//a[@class=\"dropdown-toggle btn-icon setting-btn btn-default ml-2 h-34 w-34 flex-shrink-0\"]")

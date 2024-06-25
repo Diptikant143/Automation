@@ -2,6 +2,7 @@ package demo;
 
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Keys;
 
@@ -39,6 +40,7 @@ public class ITGCITACDashBoard extends BaseClass{
 		dashboard.getLohinbtn().click();
 		ListnerImplementationClass.test.log(Status.INFO, "LOGIN PAGE ENDS HERE");
 		ListnerImplementationClass.test.log(Status.INFO, "ITGC DASHBOARD PAGE STARTS HERE");
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		dashboard.getClickOnHamBurger().click();
 		dashboard.getItgcAndItac().click();
 		dashboard.getItgcAndItacdashbaord().click();
@@ -68,8 +70,24 @@ public class ITGCITACDashBoard extends BaseClass{
 		dashboard.getCrossButton().click();
 		ListnerImplementationClass.test.log(Status.INFO, "CHECK ITGC CONTROLS STARTS HERE");
 		ListnerImplementationClass.test.log(Status.INFO, "FAMILY THEME: FAILED CONTROL STARTS HERE");
+		ListnerImplementationClass.test.log(Status.INFO, "FAMILY THEME: FAILED CONTROL STARTS HERE YELLOW");
 		//Thread.sleep(2000);
 		dashboard.getAccessGovernenceYellow().click();
+		//Thread.sleep(1000);
+		/*dashboard.getAccessGovernenceYellowSorting().click();
+		dashboard.getAccessGovernenceYellowSorting().click();
+		//Thread.sleep(1000);
+		dashboard.getDownloadExcel().click();
+		dashboard.getPagination().click();
+		//Thread.sleep(1000);
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		dashboard.getMaximizeButton().click();
+		dashboard.getCrossButton1().click();
+		ListnerImplementationClass.test.log(Status.INFO, "FAMILY THEME: FAILED CONTROL END HERE YELLOW");
+		ListnerImplementationClass.test.log(Status.INFO, "FAMILY THEME: FAILED CONTROL STARTS HERE RED");
+		//Thread.sleep(2000);
+		
 		//Thread.sleep(1000);
 		dashboard.getAccessGovernenceYellowSorting().click();
 		dashboard.getAccessGovernenceYellowSorting().click();
@@ -81,6 +99,7 @@ public class ITGCITACDashBoard extends BaseClass{
 		robot.keyRelease(KeyEvent.VK_TAB);
 		dashboard.getMaximizeButton().click();
 		dashboard.getCrossButton1().click();
+		ListnerImplementationClass.test.log(Status.INFO, "FAMILY THEME: FAILED CONTROL END HERE RED");
 		ListnerImplementationClass.test.log(Status.INFO, "FAMILY THEME: FAILED CONTROL ENDS HERE");
 		ListnerImplementationClass.test.log(Status.INFO, "FLIP ICON STARTS HERE");
 		dashboard.getFlipFlop().click();
@@ -218,7 +237,7 @@ public class ITGCITACDashBoard extends BaseClass{
 		robot.keyRelease(KeyEvent.VK_TAB);
 		dashboard.scrollToTheFast(driver);
 		ListnerImplementationClass.test.log(Status.INFO, "LIST OF ITAC ENDS HERE");
-		
+		*/
 	}
 	
 	
