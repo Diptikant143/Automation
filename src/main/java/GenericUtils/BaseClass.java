@@ -12,7 +12,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-
+import java.util.Arrays;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
@@ -52,11 +52,12 @@ public void launchBrowser() throws Throwable {
 
     	//WebDriverManager.chromedriver().setup();
     	System.setProperty("webdriver.chrome.driver", "C:\\Users\\SaikatDas\\OneDrive - RISKSUCCESS PRIVATE LIMITED\\Documents\\Automation-main\\Automation-main\\chromedriver.exe");
-
+		ChromeOptions options = new ChromeOptions();
+        options.setExperimentalOption("excludeSwitches", Arrays.asList("disable-popup-blocking"));//comment it
         driver = new ChromeDriver();
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-        
+		capabilities.setCapability(ChromeOptions.CAPABILITY, options); // comment it 
     } else {
         System.out.println("Invalid browser specified.");
         return;
