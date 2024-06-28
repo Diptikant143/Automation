@@ -4,7 +4,11 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class ItgcItac {
@@ -63,7 +67,7 @@ public class ItgcItac {
 	@FindBy(xpath="//*[@id='mat-dialog-0']/app-itgc-count-drilldown/div/div[1]/mat-icon/img")
 	private WebElement crossButton;
 	
-	@FindBy(css="highcharts-v7ohyl7-0 .highcharts-background")
+	@FindBy(xpath="(//*[@class='highcharts-text-outline'])[1]")
 	private WebElement accessGovernenceYellow;
 	
 	@FindBy(xpath="(//*[name()='rect'][@class='highcharts-point'])[1]")
@@ -162,7 +166,7 @@ public class ItgcItac {
 	@FindBy(xpath="//div[text()='ITAC']")
 	private WebElement ClickonITAC;
 	
-	@FindBy(xpath="(//div[@class='card__inner--control'])[1]")
+	@FindBy(xpath="//*[@id=\"mat-tab-content-2-1\"]/div/div[1]/div[1]/div/app-itac-count-object/div/div/div/div[1]/h1")
 	private WebElement ClickonITACControls;
 	
 	
@@ -368,7 +372,7 @@ public class ItgcItac {
 		return crossButton;
 	}
 
-	public WebElement getAccessGovernenceYellow() {
+	public WebElement getAccessGovernenceYellow(){
 		return accessGovernenceYellow;
 	}
 
