@@ -94,7 +94,7 @@ public class ItgcItac {
 	@FindBy(xpath="(//button[@class='highcharts-a11y-proxy-button'])[2]")
 	private WebElement yellowLegend;
 	
-	@FindBy(xpath="(//*[@class=\"highcharts-label highcharts-data-label highcharts-data-label-color-0\"])[1]")
+	@FindBy(xpath="(//*[@class='highcharts-label highcharts-data-label highcharts-data-label-color-0'])[1]")
 	private WebElement HighRiskRatedPassedCheckITGC;
 	
 	@FindBy(xpath="//th[@class='p-element p-sortable-column p-resizable-column ng-star-inserted'][normalize-space()='Control ID']//i[@class='p-sortable-column-icon pi pi-fw pi-sort-alt']")
@@ -106,7 +106,7 @@ public class ItgcItac {
 	@FindBy(xpath="(//input[@class='p-inputtext p-component p-element ng-star-inserted'])[16]")
 	private WebElement HighRiskRatedPassedCheckITGCInput;
 	
-	@FindBy(xpath="(//button[@class='p-element p-button-outlined p-button p-component'])[2]")
+	@FindBy(xpath="(//*[@class='p-button-label'])[2]")
 	private WebElement HighRiskRatedPassedCheckITGCClear;
 	
 	@FindBy(xpath="//*[@class='mat-tooltip-trigger p-element p-button-success mr-2 p-button p-component p-button-icon-only']")
@@ -166,7 +166,7 @@ public class ItgcItac {
 	@FindBy(xpath="//div[text()='ITAC']")
 	private WebElement ClickonITAC;
 	
-	@FindBy(xpath="//*[@id=\"mat-tab-content-2-1\"]/div/div[1]/div[1]/div/app-itac-count-object/div/div/div/div[1]/h1")
+	@FindBy(xpath="(//h1[text()='8'])[1]")
 	private WebElement ClickonITACControls;
 	
 	

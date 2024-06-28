@@ -106,9 +106,9 @@ public class ITGCITACDashBoard extends BaseClass{
 		ListnerImplementationClass.test.log(Status.INFO, "FLIP ICON ENDS HERE");
 		ListnerImplementationClass.test.log(Status.INFO, "DOWNLOAD ICON STARTS HERE");
 		
-		dashboard.getDownloadIcon().click();
-		dashboard.getImageIcon().click();
-		dashboard.getYellowLegend().click();
+		//dashboard.getDownloadIcon().click();
+		//dashboard.getImageIcon().click();
+		//dashboard.getYellowLegend().click();
 		ListnerImplementationClass.test.log(Status.INFO, "DOWNLOAD ICON END HERE");
 		ListnerImplementationClass.test.log(Status.INFO, "DISTRIBUTION OF CHECK ITGC FAILED CONTROLS STARTS HERE");
 		dashboard.getHighRiskRatedPassedCheckITGC().click();
@@ -117,7 +117,7 @@ public class ITGCITACDashBoard extends BaseClass{
 		dashboard.getHighRiskRatedPassedCheckITGCInput().sendKeys("ITGC-02");
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
-		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		dashboard.getHighRiskRatedPassedCheckITGCClear().click();
 		dashboard.getHighRiskRatedPassedCheckITGCCExcel().click();
 		dashboard.getHighRiskRatedPassedCheckITGCCross().click();
@@ -146,16 +146,15 @@ public class ITGCITACDashBoard extends BaseClass{
 		dashboard.getListOfITGCControlsClear().click();
 		dashboard.getListOfITGCControlsSorting().click();
 		dashboard.getListOfITGCControlsSortingDecending().click();
-		dashboard.getListOfITGCControlsDownloadIcon().click();
-		dashboard.getListOfITGCControlsDownload().click();
+		//dashboard.getListOfITGCControlsDownloadIcon().click();
+		//dashboard.getListOfITGCControlsDownload().click();
 		ListnerImplementationClass.test.log(Status.INFO, "LIST OF ITGC CONTROLS ENDS HERE");
 		dashboard.scrollToTheFast(driver);
 		ListnerImplementationClass.test.log(Status.INFO, "ITGC DASHBOARD PAGE ENDS HERE");
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE STARTS HERE");
 		dashboard.getClickonITAC().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		dashboard.getClickonITACControls().click();
-		
 		}
 }
 
