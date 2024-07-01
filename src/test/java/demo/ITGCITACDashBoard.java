@@ -155,6 +155,9 @@ public class ITGCITACDashBoard extends BaseClass{
 		dashboard.getClickonITAC().click();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		dashboard.getClickonITACControls().click();
+		Thread.sleep(3000);
+		dashboard.getClickAscendingorder().click();
+
 		}
 }
 
