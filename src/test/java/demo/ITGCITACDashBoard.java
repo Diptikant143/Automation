@@ -169,7 +169,18 @@ public class ITGCITACDashBoard extends BaseClass{
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE STARTS HERE: ITAC CONTROLS");
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE STARTS HERE: RISK RATING ACCORDING TO FAMILY");
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE STARTS HERE: RISK RATING ACCORDING TO FAMILY:PAYABLES");
-		//dashboard
+		dashboard.getClickOnPayables().click();
+		dashboard.getClickOnPayablesAssendingOrder().click();
+		dashboard.getClickOnPayablesdesendingOrder().click();
+		dashboard.getClickOnPayablesFirstSearchBox().sendKeys("ITAC-04");
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		dashboard.getClickOnPayablesSecoendSearchBox().sendKeys("Dipti");
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		dashboard.getClickOnPayablesClear().click();
+		dashboard.getClickOnPayablesPagination().click();
+		dashboard.getClickOnCrossButton().click();
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE END HERE: RISK RATING ACCORDING TO FAMILY:PAYABLES");
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE STARTS HERE: RISK RATING ACCORDING TO FAMILY:PROCUREMENT");
 		//dashboard
