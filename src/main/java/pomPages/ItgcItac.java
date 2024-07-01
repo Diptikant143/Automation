@@ -179,6 +179,7 @@ public class ItgcItac {
 	
 	
 	@FindBy(xpath="//i[@class='p-sortable-column-icon pi pi-fw pi-sort-amount-up-alt']")
+				   //i[@class='p-sortable-column-icon pi pi-fw pi-sort-amount-up-alt']
 	private WebElement ClickonITACControls1;
 	
 	
@@ -292,6 +293,9 @@ public class ItgcItac {
 	@FindBy(xpath="(//*[@class='highcharts-a11y-proxy-button'])[2]")
 	private WebElement clickOnHigh;
 	
+	@FindBy(xpath="//*[@class='mat-icon notranslate canclebutton material-icons mat-ligature-font mat-icon-no-color']")
+	private WebElement clickOnCrossButton;
+
 	public ItgcItac(WebDriver driver) {
 		PageFactory.initElements(driver,this);	
 		}
@@ -594,6 +598,10 @@ public class ItgcItac {
 
 	public WebElement getClickonfailedITACcontrolriskdescriptionsearchbox() {
 		return ClickonfailedITACcontrolriskdescriptionsearchbox;
+	}
+
+	public WebElement getClickOnCrossButton() {
+		return clickOnCrossButton;
 	}
 
 	public WebElement getClickonfailedITACcontrolriskdescriptionClear() {

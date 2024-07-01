@@ -152,12 +152,30 @@ public class ITGCITACDashBoard extends BaseClass{
 		dashboard.scrollToTheFast(driver);
 		ListnerImplementationClass.test.log(Status.INFO, "ITGC DASHBOARD PAGE ENDS HERE");
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE STARTS HERE");
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE STARTS HERE: ITAC CONTROLS");
 		dashboard.getClickonITAC().click();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		dashboard.getClickonITACControls().click();
 		Thread.sleep(3000);
 		dashboard.getClickAscendingorder().click();
-
+		dashboard.getClickonITACControls1().click();
+		dashboard.getClickonclearbutton().click();
+		dashboard.getClickonSearchbox().sendKeys("ITAC-06");
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		dashboard.getClickonexceldownload().click();
+		dashboard.getClickOnCrossButton().click();
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE STARTS HERE: ITAC CONTROLS");
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE STARTS HERE: RISK RATING ACCORDING TO FAMILY");
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE STARTS HERE: RISK RATING ACCORDING TO FAMILY:PAYABLES");
+		//dashboard
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE END HERE: RISK RATING ACCORDING TO FAMILY:PAYABLES");
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE STARTS HERE: RISK RATING ACCORDING TO FAMILY:PROCUREMENT");
+		//dashboard
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE END HERE: RISK RATING ACCORDING TO FAMILY:PROCUREMENT");
+		
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE END HERE: RISK RATING ACCORDING TO FAMILY");
 		}
 }
 
