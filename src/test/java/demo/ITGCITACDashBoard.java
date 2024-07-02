@@ -25,7 +25,7 @@ public class ITGCITACDashBoard extends BaseClass{
 	public void itgcdashboardDashboard() throws Throwable{
 		ListnerImplementationClass.test.log(Status.INFO, "ITGC DASHBOARD PAGE STARTS HERE");
 		ListnerImplementationClass.test.assignAuthor("Saikat");
-		ListnerImplementationClass.test.assignDevice("windows 64");
+		ListnerImplementationClass.test.assignDevice("Windows X64");
 		ItgcItac dashboard = new ItgcItac(driver);
 		Robot robot = new Robot();
 		ListnerImplementationClass.test.log(Status.INFO, "LOGIN PAGE STARTS HERE");
