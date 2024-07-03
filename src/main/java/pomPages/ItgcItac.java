@@ -217,6 +217,9 @@ public class ItgcItac {
 	@FindBy(xpath="(//*[@class='p-dropdown-trigger-icon pi pi-chevron-down'])[2]")
 	private WebElement clickOnPayablesPagination;
 
+	@FindBy(xpath="(//*[@class='highcharts-label highcharts-data-label highcharts-data-label-color-undefined'])[2]")
+	private WebElement clickOnProcurement;
+
 
 	public ItgcItac(WebDriver driver) {
 		PageFactory.initElements(driver,this);	
@@ -512,5 +515,9 @@ public class ItgcItac {
 
 	public WebElement getClickOnPayablesPagination() {
 		return clickOnPayablesPagination;
+	}
+
+	public WebElement getClickOnProcurement() {
+		return clickOnProcurement;
 	}
 }

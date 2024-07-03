@@ -39,8 +39,6 @@ public class ITGCITACDashBoard extends BaseClass{
 		dashboard.getChooseClient().click();
 		dashboard.getLohinbtn().click();
 		ListnerImplementationClass.test.log(Status.INFO, "LOGIN PAGE ENDS HERE");
-		
-		
 		ListnerImplementationClass.test.log(Status.INFO, "ITGC DASHBOARD PAGE STARTS HERE");
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		dashboard.getClickOnHamBurger().click();
@@ -183,7 +181,10 @@ public class ITGCITACDashBoard extends BaseClass{
 		dashboard.getClickOnCrossButton().click();
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE END HERE: RISK RATING ACCORDING TO FAMILY:PAYABLES");
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE STARTS HERE: RISK RATING ACCORDING TO FAMILY:PROCUREMENT");
-		//dashboard
+		dashboard.getClickOnProcurement().click();
+		dashboard.getClickOnPayablesAssendingOrder().click();
+		dashboard.getClickOnPayablesdesendingOrder().click();
+		dashboard.getClickOnPayablesFirstSearchBox().sendKeys("ITAC-08");
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE END HERE: RISK RATING ACCORDING TO FAMILY:PROCUREMENT");
 		
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE END HERE: RISK RATING ACCORDING TO FAMILY");
