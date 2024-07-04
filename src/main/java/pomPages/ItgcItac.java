@@ -220,6 +220,11 @@ public class ItgcItac {
 	@FindBy(xpath="(//*[@class='highcharts-label highcharts-data-label highcharts-data-label-color-undefined'])[2]")
 	private WebElement clickOnProcurement;
 
+	@FindBy(xpath="//button[@class='mat-tooltip-trigger p-element p-button-success mr-2 p-button p-component p-button-icon-only']")
+	private WebElement clickOnProcurementExcel;
+
+	@FindBy(xpath="//*[@class='mat-icon notranslate canclebutton material-icons mat-ligature-font mat-icon-no-color']")
+	private WebElement clickOnProcurementCross;
 
 	public ItgcItac(WebDriver driver) {
 		PageFactory.initElements(driver,this);	
@@ -519,5 +524,13 @@ public class ItgcItac {
 
 	public WebElement getClickOnProcurement() {
 		return clickOnProcurement;
+	}
+
+	public WebElement getClickOnProcurementExcel() {
+		return clickOnProcurementExcel;
+	}
+
+	public WebElement getClickOnProcurementCross() {
+		return clickOnProcurementCross;
 	}
 }

@@ -46,7 +46,6 @@ public class ITGCITACDashBoard extends BaseClass{
 		dashboard.getItgcAndItacdashbaord().click();
 		dashboard.getClickOnHamBurger().click();
 		ListnerImplementationClass.test.log(Status.INFO, "ITGC DASHBOARD PAGE ENDS HERE");
-		
 		ListnerImplementationClass.test.log(Status.INFO, "CHECK ITGC CONTROLS STARTS HERE");
 		dashboard.getITGC_Controls().click();
 		dashboard.getITGC_Controls_sorting().click(); //For Ascending order
@@ -185,9 +184,13 @@ public class ITGCITACDashBoard extends BaseClass{
 		dashboard.getClickOnPayablesAssendingOrder().click();
 		dashboard.getClickOnPayablesdesendingOrder().click();
 		dashboard.getClickOnPayablesFirstSearchBox().sendKeys("ITAC-08");
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		dashboard.getClickOnPayablesClear().click();
+		dashboard.getDownloadExcel().click();
+		dashboard.getClickOnProcurementCross().click();
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE END HERE: RISK RATING ACCORDING TO FAMILY:PROCUREMENT");
 		
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE END HERE: RISK RATING ACCORDING TO FAMILY");
 		}
 }
-

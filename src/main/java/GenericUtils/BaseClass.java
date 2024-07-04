@@ -112,7 +112,7 @@ public void logoutApp() {
 }
 @AfterClass
 public void closeBrowser() {
-	//driver.close();
+	driver.close();
 	System.out.println("=====Browser close sucessfull============");
 }
 @AfterSuite
