@@ -226,6 +226,33 @@ public class ItgcItac {
 	@FindBy(xpath="//*[@class='mat-icon notranslate canclebutton material-icons mat-ligature-font mat-icon-no-color']")
 	private WebElement clickOnProcurementCross;
 
+	@FindBy(xpath="//img[@alt='flip icon']")
+	private WebElement flipFlopElementElement;
+
+	@FindBy(xpath="//*[@aria-label='Show High']")
+	private WebElement ITACLegends;
+
+	@FindBy(xpath="//*[@class='highcharts-label highcharts-data-label highcharts-data-label-color-1']")
+	private WebElement ITACFailedcontrols;
+
+	@FindBy(xpath="(//i[@class='p-sortable-column-icon pi pi-fw pi-sort-alt'])[17]")
+	private WebElement ITACFailedcontrolsChartAssendingSorting;
+
+	@FindBy(xpath="//i[@class='p-sortable-column-icon pi pi-fw pi-sort-amount-up-alt']")
+	private WebElement ITACFailedcontrolsChartDeAssendingSorting;
+
+	@FindBy(xpath="(//input[@class='p-inputtext p-component p-element ng-star-inserted'])[17]")
+	private WebElement ITACFailedcontrolsChartSearchBox;
+
+	@FindBy(xpath="(//*[@class='imgAlign ng-star-inserted'])[2]")
+	private WebElement ITACFailedcontrolsChartExpand;
+
+	@FindBy(xpath="//img[@src='assets/media/grid/close-outline.svg']")
+	private WebElement ITACFailedcontrolsChartCross;
+
+	@FindBy(xpath="//*[@class='highcharts-halo highcharts-color-0']")
+	private WebElement controlFails;
+
 	public ItgcItac(WebDriver driver) {
 		PageFactory.initElements(driver,this);	
 		}
@@ -533,4 +560,42 @@ public class ItgcItac {
 	public WebElement getClickOnProcurementCross() {
 		return clickOnProcurementCross;
 	}
+
+	public WebElement getFlipFlopElementElement() {
+		return flipFlopElementElement;
+	}
+
+	public WebElement getITACLegends() {
+		return ITACLegends;
+	}
+
+	public WebElement getITACFailedcontrols() {
+		return ITACFailedcontrols;
+	}
+
+	public WebElement getITACFailedcontrolsChartAssendingSorting() {
+		return ITACFailedcontrolsChartAssendingSorting;
+	}
+
+	public WebElement getITACFailedcontrolsChartDeAssendingSorting() {
+		return ITACFailedcontrolsChartDeAssendingSorting;
+	}
+
+	public WebElement getITACFailedcontrolsChartSearchBox() {
+		return ITACFailedcontrolsChartSearchBox;
+	}
+
+	public WebElement getITACFailedcontrolsChartExpand() {
+		return ITACFailedcontrolsChartExpand;
+	}
+
+	public WebElement getITACFailedcontrolsChartCross() {
+		return ITACFailedcontrolsChartCross;
+	}
+
+	public WebElement getControlFails() {
+		return controlFails;
+		
+	}
+	
 }

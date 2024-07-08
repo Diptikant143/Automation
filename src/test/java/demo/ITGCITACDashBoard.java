@@ -5,8 +5,7 @@ import java.awt.event.KeyEvent;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Keys;
-
-
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -190,7 +189,34 @@ public class ITGCITACDashBoard extends BaseClass{
 		dashboard.getDownloadExcel().click();
 		dashboard.getClickOnProcurementCross().click();
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE END HERE: RISK RATING ACCORDING TO FAMILY:PROCUREMENT");
-		
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE START HERE: RISK RATING ACCORDING TO FAMILY:FLIP");
+		dashboard.getFlipFlopElementElement().click();
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE ENDS HERE: RISK RATING ACCORDING TO FAMILY:FLIP");		
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE START HERE: RISK RATING ACCORDING TO FAMILY:CHART LEGEND");	
+		Thread.sleep(4000);
+		dashboard.getITACLegends().click();	
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE ENDS HERE: RISK RATING ACCORDING TO FAMILY:CHART LEGEND");
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE END HERE: RISK RATING ACCORDING TO FAMILY");
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE START HERE: DISTRIBUTION OF ITAC CONTROLS");
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE START HERE: DISTRIBUTION OF ITAC CONTROLS:FAILED CONTROLS");
+		dashboard.getITACFailedcontrols().click();
+		dashboard.getITACFailedcontrolsChartAssendingSorting().click();
+		dashboard.getITACFailedcontrolsChartDeAssendingSorting().click();
+		dashboard.getITACFailedcontrolsChartSearchBox().sendKeys("ITAC-01");
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		dashboard.getITACFailedcontrolsChartExpand().click();
+		dashboard.getITACFailedcontrolsChartCross().click();
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE START HERE: DISTRIBUTION OF ITAC CONTROLS:FAILED CONTROLS");
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE START HERE: DISTRIBUTION OF ITAC CONTROLS:FAILED CONTROLS");
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		//dashboard.getControlFails().click();
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE START HERE: DISTRIBUTION OF ITAC CONTROLS:FAILED CONTROLS");
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE ENDS HERE: DISTRIBUTION OF ITAC CONTROLS ");
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE STARTS HERE: LIST OF ITAC CONTROLS");
+		dashboard.scrollToTheLast(driver);
+		
+		//dashboard.scrollToTheFast(driver);
+		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE ENDS HERE: LIST OF ITAC CONTROLS");
 		}
 }
