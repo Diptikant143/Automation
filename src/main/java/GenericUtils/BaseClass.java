@@ -52,9 +52,9 @@ public void launchBrowser() throws Throwable {
 
     	//WebDriverManager.chromedriver().setup();
 	//chrome driver path for Windows system
-    	//System.setProperty("webdriver.chrome.driver", "C:\\Users\\SaikatDas\\OneDrive - RISKSUCCESS PRIVATE LIMITED\\Documents\\Automation-main\\Automation-main\\chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver", "C:\\Users\\SaikatDas\\OneDrive - RISKSUCCESS PRIVATE LIMITED\\Documents\\Automation-main\\Automation-main\\chromedriver.exe");
 	// for Ubuntu)
-	System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+	//System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 	ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("excludeSwitches", Arrays.asList("disable-popup-blocking"));//comment it
         driver = new ChromeDriver();

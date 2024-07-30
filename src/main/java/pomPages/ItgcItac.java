@@ -252,7 +252,19 @@ public class ItgcItac {
 
 	@FindBy(xpath="//*[@class='highcharts-halo highcharts-color-0']")
 	private WebElement controlFails;
+	
+	@FindBy(xpath="//*[@class='p-dropdown-trigger-icon pi pi-chevron-down']")
+	private WebElement dropDownBtn;
+	
+	@FindBy(xpath="//*[@class='mat-tooltip-trigger p-element p-button-success mr-2 buttonAlign p-button p-component p-button-icon-only']")
+	private WebElement listOfITACExcel;
 
+	@FindBy(xpath="//span[text()='50']")
+	private WebElement dropDownBtn1;
+	
+	@FindBy(xpath="//*[@class='p-inputtext p-component p-element ng-star-inserted']")
+	private WebElement listITACControlsSearchBox;
+	
 	public ItgcItac(WebDriver driver) {
 		PageFactory.initElements(driver,this);	
 		}
@@ -596,6 +608,19 @@ public class ItgcItac {
 	public WebElement getControlFails() {
 		return controlFails;
 		
+	}
+	public WebElement getDropDownBtn() {
+		return dropDownBtn;
+	}
+	
+	public WebElement getListOfITACExcel() {
+		return listOfITACExcel;
+	}
+	public WebElement getDropDownBtn1() {
+		return dropDownBtn1;
+	}
+	public WebElement getListITACControlsSearchBox() {
+		return listITACControlsSearchBox;
 	}
 	
 }

@@ -215,8 +215,14 @@ public class ITGCITACDashBoard extends BaseClass{
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE ENDS HERE: DISTRIBUTION OF ITAC CONTROLS ");
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE STARTS HERE: LIST OF ITAC CONTROLS");
 		dashboard.scrollToTheLast(driver);
-		
-		//dashboard.scrollToTheFast(driver);
+		dashboard.getDropDownBtn().click();
+		dashboard.getDropDownBtn1().click();
+		dashboard.getDropDownBtn1().click();
+		dashboard.getListITACControlsSearchBox().sendKeys("ITAC-01");
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		dashboard.scrollToTheFast(driver);
+		dashboard.getListOfITACExcel().click();
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE ENDS HERE: LIST OF ITAC CONTROLS");
 		}
 }
