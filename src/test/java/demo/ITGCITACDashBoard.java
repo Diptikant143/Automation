@@ -214,6 +214,7 @@ public class ITGCITACDashBoard extends BaseClass{
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE START HERE: DISTRIBUTION OF ITAC CONTROLS:FAILED CONTROLS");
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE ENDS HERE: DISTRIBUTION OF ITAC CONTROLS ");
 		ListnerImplementationClass.test.log(Status.INFO, "ITAC DASHBOARD PAGE STARTS HERE: LIST OF ITAC CONTROLS");
+		Thread.sleep(5000);
 		dashboard.scrollToTheLast(driver);
 		dashboard.getDropDownBtn().click();
 		dashboard.getDropDownBtn1().click();
