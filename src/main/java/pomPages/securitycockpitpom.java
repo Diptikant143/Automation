@@ -29,9 +29,9 @@ public class securitycockpitpom {
 
 	@FindBy(xpath="(//span[text()='Setup and Administration'])[3]")
 	private WebElement clickOnsetup;
-	@FindBy(xpath="(//span[text()='Security Cockpit'])[2]")
+	@FindBy(xpath="(//*[text()='Security Cockpit'])[2]")
 	private WebElement securityCockpit;
-	@FindBy(xpath="//*[@id='mat-select-18']")
+	@FindBy(xpath="(//*[text()='Select Username'])[1]")
 	private WebElement Clickonuserdownarrey;
 
 	@FindBy(xpath="(//span[@class='mat-option-text'])[3]")
@@ -90,7 +90,9 @@ public class securitycockpitpom {
 	}
  
 	public void getSecurityCockpit(WebDriver driver) {
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", securityCockpit);
+		int yCoordinate = securityCockpit.getLocation().getY();
+		 ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, " + yCoordinate + ");");
+		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", securityCockpit);
 		//("arguments[0].scrollIntoView(true);", securityCockpit);
 		securityCockpit.click();
 	}

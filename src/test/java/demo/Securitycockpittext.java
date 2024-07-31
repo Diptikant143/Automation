@@ -37,11 +37,15 @@ public class Securitycockpittext extends BaseClass {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		cock.getSecurityCockpit(driver);
 		cock.getClickOnhamburgur().click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		cock.getClickonuserdownarrey().click();
+		Thread.sleep(3000);
 		cock.getClickonuseropoup().click();
+		Thread.sleep(3000);
 		cock.getClickonuserexceldownload().click();
+		Thread.sleep(3000);
 		cock.getClickonibutton().click();
+		Thread.sleep(3000);
 		cock.getClickonCross().click();
 	}
 }
