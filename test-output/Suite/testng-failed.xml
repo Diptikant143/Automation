@@ -14,6 +14,17 @@
           <include name="loginToApp"/>
         </methods>
       </class> <!-- demo.Securitycockpittext -->
+      <class name="demo.ITGCITACDashBoard">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="bSuite"/>
+          <include name="logoutApp"/>
+          <include name="closeBrowser"/>
+          <include name="closeDB"/>
+          <include name="itgcdashboardDashboard"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- demo.ITGCITACDashBoard -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
